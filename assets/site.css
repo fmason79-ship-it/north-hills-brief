@@ -404,10 +404,10 @@
 
   /* ============ BRAND MARK (added with the 2026 logo) ============ */
   .brand{
-    flex-direction:row; align-items:center; gap:12px;
+    flex-direction:row; align-items:center; gap:14px;
   }
   .brand-text{ display:flex; flex-direction:column; gap:2px; }
-  .brand-mark{ height:26px; width:auto; display:block; flex-shrink:0; }
+  .brand-mark{ height:44px; width:auto; display:block; flex-shrink:0; }
   .brand-mark.on-dark{ display:none; }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]) .brand-mark.on-light{ display:none; }
@@ -415,9 +415,21 @@
   }
   :root[data-theme="dark"] .brand-mark.on-light{ display:none; }
   :root[data-theme="dark"] .brand-mark.on-dark{ display:block; }
+  .brand-sub{ white-space:nowrap; }
   @media (max-width:420px){
-    .brand-mark{ height:22px; }
+    .brand-mark{ height:36px; }
     .brand-name{ font-size:1.12rem; }
+  }
+  /* below this the filing line can no longer fit on one line beside the mark,
+     and wrapping it makes the header taller than the rest of the site */
+  @media (max-width:400px){
+    .brand-mark{ height:34px; }
+    .brand-sub{ display:none; }
+  }
+  @media (max-width:345px){
+    .brand-mark{ height:28px; }
+    .brand-name{ font-size:0.94rem; white-space:nowrap; }
+    .brand{ gap:10px; }
   }
 
   /* ============ FOOTER SOCIAL ============ */
