@@ -1,0 +1,67 @@
+NORTH HILLS BRIEF — updated site files
+======================================
+
+WHAT TO DO
+----------
+Everything in this folder goes into your GitHub repo, keeping the same
+structure. In GitHub's web editor you can drag the whole folder in.
+
+  index.html                 <- replaces your current one
+  real-estate-edition.html   <- replaces
+  beauty-pulse.html          <- replaces
+  beauty-shop-math.html      <- replaces
+  hvac-pulse.html            <- replaces
+  favicon.ico                <- new, must sit at the top level
+  assets/                    <- new folder, all 8 files go inside
+
+Commit. Netlify redeploys on its own. Nothing else to configure.
+
+You sent me northhillsbrief.html as well — it was byte-for-byte identical
+to index.html, so it's a duplicate of the homepage. I left it out. If it's
+actually live somewhere, delete it or replace it with the new index.html.
+
+
+WHAT CHANGED
+------------
+1. THE LOGO is in the header on every page, with a second version that
+   swaps in automatically when someone's device is in dark mode.
+
+2. THE FONT is now Lora everywhere Fraunces used to be, so the headlines
+   match the logo's wordmark. Display weight went from 900 to 700, which
+   is Lora's heaviest — headlines read slightly lighter than before.
+
+3. THE GREEN is now pine (#14503F) sitewide instead of teal, matching the
+   logo. Dark mode uses a lighter pine (#5FB48D) so it stays readable.
+
+4. FAVICON AND APP ICONS now exist. You had none — browser tabs were
+   showing a blank page icon.
+
+5. X AND INSTAGRAM are in the footer of every page.
+
+6. SHARE PREVIEW: assets/og-image.png. When anyone posts a link to the
+   site on X, LinkedIn, Facebook or in iMessage, they'll now get a proper
+   card with the logo instead of a bare URL.
+
+7. THE STYLING moved out of the five pages into one file,
+   assets/site.css. It used to be pasted into each page — the same 16,000
+   characters, five times. Now a design change is one edit instead of five.
+
+
+IF YOU WANT TO CHANGE THE GREEN LATER
+-------------------------------------
+Open assets/site.css. Near the top you'll see:
+
+    --green: #14503F;
+    --green-strong: #0D3B2E;
+
+Those two control every button, link and accent on the light version of
+the site. Further down, inside the two blocks that mention "dark", the
+same two names control the dark version. Change the values, commit, done.
+
+
+ONE THING TO CHECK AFTER IT GOES LIVE
+-------------------------------------
+Post a link to northhillsbrief.com somewhere and confirm the share card
+picture shows up. Social platforms cache these hard — if you shared the
+site before today, X and Facebook may hold the old blank version for a
+while. Both have a cache reset tool if it's stubborn.
