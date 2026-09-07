@@ -103,8 +103,8 @@
     text-decoration:none;
   }
   .brand-name{
-    font-family:"Lora", serif; font-weight:700; font-size:1.28rem;
-    letter-spacing:-0.01em; color:var(--ink);
+    font-family:"Lora", serif; font-weight:700; font-size:1.6rem;
+    letter-spacing:-0.01em; color:var(--ink); line-height:1.15;
   }
   .brand-sub{
     font-family:"Space Mono", monospace; font-size:0.62rem;
@@ -416,19 +416,34 @@
   :root[data-theme="dark"] .brand-mark.on-light{ display:none; }
   :root[data-theme="dark"] .brand-mark.on-dark{ display:block; }
   .brand-sub{ white-space:nowrap; }
-  @media (max-width:420px){
-    .brand-mark{ height:36px; }
-    .brand-name{ font-size:1.12rem; }
+
+  /* The wordmark steps down as the bar narrows so it never wraps to a second
+     line. The tight spot is 760-900px, where the nav is still horizontal but
+     there is no longer room for both at full size. */
+  @media (max-width:1000px){
+    .brand-name{ font-size:1.42rem; }
   }
-  /* below this the filing line can no longer fit on one line beside the mark,
-     and wrapping it makes the header taller than the rest of the site */
-  @media (max-width:400px){
+  @media (max-width:900px){
+    .brand-name{ font-size:1.24rem; }
+    .brand-mark{ height:40px; }
+    nav.links{ gap:16px; }
+  }
+  @media (max-width:520px){
+    .brand-name{ font-size:1.18rem; }
+    .brand-mark{ height:36px; }
+  }
+  @media (max-width:420px){
+    .brand-name{ font-size:1.1rem; }
     .brand-mark{ height:34px; }
+  }
+  /* below this the filing line can no longer fit beside the mark, and
+     wrapping it makes the header taller than it is on desktop */
+  @media (max-width:400px){
     .brand-sub{ display:none; }
   }
   @media (max-width:345px){
     .brand-mark{ height:28px; }
-    .brand-name{ font-size:0.94rem; white-space:nowrap; }
+    .brand-name{ font-size:0.98rem; }
     .brand{ gap:10px; }
   }
 
