@@ -1,0 +1,17 @@
+THE NORTH HILLS BRIEF — corrected logo files, 8 September 2026
+
+WHAT CHANGED
+A hairline seam was visible where the front hill met the bar, at large sizes only.
+The bar now overlaps the base of the hills instead of butting up against it, so the
+two shapes render as one. Nothing else about the mark changed.
+
+WEBSITE  (replace the files of the same name)
+  website-assets/  ->  your repo's  assets/  folder
+  favicon.ico      ->  the root of your repo (next to index.html)
+No HTML or CSS changes are needed. Same filenames, same sizes.
+
+SOCIAL  (re-upload only if you want to; the seam is subtle)
+  social/nhb-avatar-ink-instagram-1080.png   Instagram profile picture
+  social/nhb-avatar-ink-x-400.png            X profile picture
+  social/nhb-x-header-ink.png                X header, 1500 x 500
+  social/nhb-ig-1/2/3.png                    the launch carousel, corrected
