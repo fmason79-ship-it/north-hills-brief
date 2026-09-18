@@ -23,10 +23,11 @@
 <meta name="twitter:site" content="@northhillsbrief">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 
 <header class="site">
   <div class="nav-row wrap">
@@ -142,14 +143,14 @@
           <li>Court & estate ownership changes</li>
         </ul>
         <div class="price-row"><span class="amt">$29</span><span class="per">/ month</span></div>
-        <a class="btn btn-primary" href="#" data-stripe-slot="real-estate-monthly" style="text-align:center;">Subscribe</a>
+        <a class="btn btn-primary" href="#subscribe" data-stripe-slot="real-estate-monthly" style="text-align:center;">Subscribe</a>
         <a class="detail-link" href="real-estate-edition.html">See a full sample issue →</a>
       </div>
 
       <div class="product-card">
         <div class="product-top"><span>No. 02 &middot; Sector</span></div>
         <h3><a href="beauty-pulse.html">Beauty Pulse</a></h3>
-        <div class="product-cadence">Bi-weekly</div>
+        <div class="product-cadence">Every two weeks</div>
         <p class="desc">Licensing, openings, closings, and local demand signals for North Hills salons, barbers, and beauty businesses, read from the same primary sources as the flagship.</p>
         <ul>
           <li>New & lapsed licenses</li>
@@ -157,7 +158,7 @@
           <li>Foot-traffic & corridor notes</li>
         </ul>
         <div class="price-row"><span class="amt">$15</span><span class="per">/ month</span></div>
-        <a class="btn btn-primary" href="#" data-stripe-slot="beauty-pulse-monthly" style="text-align:center;">Subscribe</a>
+        <a class="btn btn-primary" href="#subscribe" data-stripe-slot="beauty-pulse-monthly" style="text-align:center;">Subscribe</a>
         <a class="detail-link" href="beauty-pulse.html">See a full sample issue →</a>
       </div>
 
@@ -179,7 +180,7 @@
       <div class="product-card">
         <div class="product-top"><span>No. 04 &middot; Sector</span></div>
         <h3><a href="hvac-pulse.html">HVAC Pulse</a></h3>
-        <div class="product-cadence">Bi-weekly</div>
+        <div class="product-cadence">Every two weeks</div>
         <p class="desc">Competitor activity, permit & material costs, and institutional contract bids for North Hills-area HVAC and mechanical contractors, read from the same municipal and school-district documents as the flagship.</p>
         <ul>
           <li>Permit & material-cost benchmarking</li>
@@ -187,7 +188,7 @@
           <li>Institutional contract watch (school districts & municipalities)</li>
         </ul>
         <div class="price-row"><span class="amt">$15</span><span class="per">/ month</span></div>
-        <a class="btn btn-primary" href="#" data-stripe-slot="hvac-pulse-monthly" style="text-align:center;">Subscribe</a>
+        <a class="btn btn-primary" href="#subscribe" data-stripe-slot="hvac-pulse-monthly" style="text-align:center;">Subscribe</a>
         <a class="detail-link" href="hvac-pulse.html">See a full sample issue →</a>
       </div>
 
@@ -197,6 +198,13 @@
   <div class="wrap">
     <div class="sources-bar">
       <span>Agendas</span><span>Minutes</span><span>Meeting packets</span><span>PLCB filings</span><span>Check registers</span><span>Register of Wills</span><span>Court records</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="also-from">
+      <span class="also-label">Also from the Brief</span>
+      <span class="also-body"><a href="https://desk.northhillsbrief.com">Let Desk</a>: public-works lettings across Allegheny County and the west region, for the contractors who bid them. A living board, not a newsletter.</span>
     </div>
   </div>
 
@@ -223,13 +231,16 @@
         <h2>Get the next issue before it's filed anywhere else.</h2>
         <p>Leave your email for a free sample issue, or subscribe directly above to start receiving the full Brief.</p>
       </div>
-      <form class="subscribe-form" action="mailto:hello@northhillsbrief.com" method="post" enctype="text/plain">
+      <form class="subscribe-form" name="sample-request" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="sample-request">
+        <input type="hidden" name="source" value="Homepage sample request">
+        <p class="hp" hidden><label>Leave this empty: <input name="bot-field"></label></p>
         <label for="email-input">Email address</label>
         <div class="row">
           <input id="email-input" type="email" name="email" placeholder="you@yourbusiness.com" required>
           <button type="submit">Send</button>
         </div>
-        <p class="form-note">Opens your email client, addressed to hello@northhillsbrief.com. Prefer to just email directly? Same address works.</p>
+        <p class="form-note">One email, no list, no sharing. Prefer to write directly? hello@northhillsbrief.com works too.</p>
       </form>
     </div>
   </section>
@@ -237,11 +248,13 @@
   <footer class="site wrap">
     <span>&copy; 2026 The North Hills Brief &middot; West View, PA</span>
     <span class="footer-links">
-      <a href="https://x.com/northhillsbrief" rel="me" target="_blank">X</a>
+      <a href="https://x.com/northhillsbrief" rel="me noopener" target="_blank">X</a>
       <span class="sep">&middot;</span>
-      <a href="https://www.instagram.com/northhillsbrief/" rel="me" target="_blank">Instagram</a>
+      <a href="https://www.instagram.com/northhillsbrief/" rel="me noopener" target="_blank">Instagram</a>
       <span class="sep">&middot;</span>
       <a href="mailto:hello@northhillsbrief.com">hello@northhillsbrief.com</a>
+      <span class="sep">&middot;</span>
+      <a href="https://desk.northhillsbrief.com">Let Desk</a>
     </span>
   </footer>
 

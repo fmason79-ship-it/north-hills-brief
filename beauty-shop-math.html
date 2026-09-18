@@ -23,10 +23,11 @@
 <meta name="twitter:site" content="@northhillsbrief">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 
 <header class="site">
   <div class="nav-row wrap">
@@ -129,13 +130,16 @@
         <h2>One shop, one quarter. Let's talk.</h2>
         <p>Tell me a bit about your shop and I'll follow up about reserving the next open quarter.</p>
       </div>
-      <form class="subscribe-form" action="mailto:hello@northhillsbrief.com?subject=Beauty%20Shop%20Math%20inquiry" method="post" enctype="text/plain">
+      <form class="subscribe-form" name="sample-request" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="sample-request">
+        <input type="hidden" name="source" value="Beauty Shop Math inquiry">
+        <p class="hp" hidden><label>Leave this empty: <input name="bot-field"></label></p>
         <label for="email-input">Email address</label>
         <div class="row">
           <input id="email-input" type="email" name="email" placeholder="you@yourshop.com" required>
           <button type="submit">Request a spot</button>
         </div>
-        <p class="form-note">Opens your email client, addressed to hello@northhillsbrief.com.</p>
+        <p class="form-note">One email, no list, no sharing. Prefer to write directly? hello@northhillsbrief.com works too.</p>
       </form>
     </div>
   </section>
@@ -144,11 +148,13 @@
   <footer class="site wrap">
     <span>&copy; 2026 The North Hills Brief &middot; West View, PA</span>
     <span class="footer-links">
-      <a href="https://x.com/northhillsbrief" rel="me" target="_blank">X</a>
+      <a href="https://x.com/northhillsbrief" rel="me noopener" target="_blank">X</a>
       <span class="sep">&middot;</span>
-      <a href="https://www.instagram.com/northhillsbrief/" rel="me" target="_blank">Instagram</a>
+      <a href="https://www.instagram.com/northhillsbrief/" rel="me noopener" target="_blank">Instagram</a>
       <span class="sep">&middot;</span>
       <a href="mailto:hello@northhillsbrief.com">hello@northhillsbrief.com</a>
+      <span class="sep">&middot;</span>
+      <a href="https://desk.northhillsbrief.com">Let Desk</a>
     </span>
   </footer>
 
