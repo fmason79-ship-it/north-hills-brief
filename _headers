@@ -1,0 +1,6 @@
+# Netlify headers. Pages and the stylesheet are always revalidated, so a
+# push shows up on the next load instead of after a cache window.
+/*
+  Cache-Control: no-cache
+/assets/*
+  Cache-Control: no-cache
