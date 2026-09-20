@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beauty Pulse No. 03 preview &middot; The North Hills Brief</title>
+<meta name="description" content="Read a full issue of Beauty Pulse: posted salon prices, the cut-price band and wage figures for six towns north of Pittsburgh. Every two weeks.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/nhb-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon-180.png">
+<link rel="manifest" href="/assets/site.webmanifest">
+<meta name="theme-color" content="#14503F">
+<link rel="canonical" href="https://northhillsbrief.com/beauty-pulse-preview">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The North Hills Brief">
+<meta property="og:title" content="Beauty Pulse No. 03 preview &middot; The North Hills Brief">
+<meta property="og:description" content="Half the posted cut prices in six towns north of Pittsburgh sit in one ten-dollar band. Read the full issue.">
+<meta property="og:url" content="https://northhillsbrief.com/beauty-pulse-preview">
+<meta property="og:image" content="https://northhillsbrief.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@northhillsbrief">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=20260918c">
+<style>
+  /* ============ ISSUE PREVIEW (this page only) ============ */
+  .issue{
+    background:var(--paper-raised); border:1px solid var(--rule); border-radius:16px;
+    box-shadow:var(--shadow); padding:36px 36px 28px; margin-top:34px; position:relative;
+  }
+  .issue-head{
+    display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap;
+    padding-bottom:14px; border-bottom:2px solid var(--green);
+  }
+  .issue-title{ font-family:"Lora", serif; font-weight:700; font-size:1.5rem; line-height:1.1; }
+  .issue-meta{
+    text-align:right; font-family:"Space Mono", monospace; font-size:0.62rem;
+    letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); line-height:1.8;
+  }
+  .issue-meta strong{ color:var(--green); display:block; font-size:0.7rem; }
+  .issue-towns{
+    font-family:"Space Mono", monospace; font-size:0.6rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--muted); padding:10px 0 2px;
+  }
+  .issue p.issue-reader{ font-style:italic; color:var(--ink-soft); font-size:0.95rem; margin:0 0 14px; }
+  .issue p.issue-lead{
+    font-family:"Lora", serif; font-weight:700; font-size:clamp(1.35rem,2.6vw,1.9rem);
+    line-height:1.2; margin:0 0 22px; max-width:40ch;
+  }
+  .issue-stats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin-bottom:28px; }
+  .issue-stat{
+    border:1px solid var(--rule); border-top:3px solid var(--green); border-radius:8px;
+    padding:12px 14px; background:var(--paper);
+  }
+  .issue-stat .num{ font-family:"Lora", serif; font-weight:700; font-size:1.8rem; color:var(--green); line-height:1.1; font-variant-numeric:tabular-nums; }
+  .issue-stat .label{ font-family:"Space Mono", monospace; font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink); margin-top:6px; }
+  .issue-stat .sub{ font-size:0.8rem; color:var(--ink-soft); margin-top:2px; }
+  .issue-cols{ display:grid; grid-template-columns:1fr 1fr; gap:28px 36px; }
+  @media (max-width:760px){ .issue-cols{ grid-template-columns:1fr; } .issue{ padding:24px 18px 20px; } .issue-stats{ grid-template-columns:1fr 1fr; gap:10px; } .issue-stat .num{ font-size:1.5rem; } .issue table{ font-size:0.82rem; } .issue-meta{ text-align:left; } }
+  .issue h3{
+    font-family:"Space Mono", monospace; font-size:0.66rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--ink); margin:0 0 10px; padding-bottom:6px; border-bottom:1px solid var(--rule);
+  }
+  .issue table{ width:100%; border-collapse:collapse; font-size:0.88rem; margin-bottom:12px; }
+  .issue th{
+    text-align:left; font-family:"Space Mono", monospace; font-weight:400; font-size:0.58rem;
+    letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); padding:4px 0 6px; border-bottom:1px solid var(--rule);
+  }
+  .issue td{ padding:7px 12px 7px 0; border-bottom:1px solid var(--rule); vertical-align:top; }
+  .issue td:last-child, .issue th:last-child{ padding-right:0; }
+  .issue th{ padding-right:12px; }
+  .issue td.n{ white-space:nowrap; }
+  .issue td.n, .issue th.n{ text-align:right; font-variant-numeric:tabular-nums; }
+  .issue td:first-child{ font-weight:600; }
+  .issue td.nm{ color:var(--red); font-size:0.8rem; text-align:right; }
+  .issue p{ margin:0 0 10px; font-size:0.92rem; color:var(--ink); }
+  .issue-checks{
+    background:var(--green); color:var(--paper); border-radius:8px; margin-top:26px; overflow:hidden;
+  }
+  .issue-checks h3{ color:var(--paper); border:none; margin:0; padding:10px 16px; }
+  .issue-checks ol{
+    margin:0; padding:14px 16px 14px 34px; background:var(--paper-raised); color:var(--ink);
+    border:1px solid var(--green); border-top:none; border-radius:0 0 8px 8px;
+    display:grid; grid-template-columns:1fr 1fr; gap:8px 28px; font-size:0.9rem;
+  }
+  @media (max-width:760px){ .issue-checks ol{ grid-template-columns:1fr; } }
+  .issue-box{
+    margin-top:22px; padding:14px 18px; border:1px solid var(--rule); border-left:4px solid var(--green);
+    border-radius:6px; font-size:0.8rem; line-height:1.55; color:var(--ink-soft);
+  }
+  .issue-box strong{ color:var(--ink); font-family:"Space Mono", monospace; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; }
+  .issue-foot{
+    margin-top:18px; padding-top:12px; border-top:1px solid var(--rule);
+    display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; align-items:flex-end;
+    font-size:0.82rem; color:var(--ink-soft);
+  }
+  .issue-foot .mast{
+    font-family:"Space Mono", monospace; font-size:0.58rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);
+  }
+  .issue-foot .next{ font-style:italic; color:var(--muted); }
+  .preview-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top:22px; }
+  .preview-note{ font-size:0.9rem; color:var(--ink-soft); max-width:60ch; margin-top:14px; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#top">Skip to content</a>
+
+<header class="site">
+  <div class="nav-row wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-mark on-light" src="/assets/nhb-mark.svg" alt="" width="68" height="26">
+      <img class="brand-mark on-dark" src="/assets/nhb-mark-dark.svg" alt="" width="68" height="26">
+      <span class="brand-text">
+        <span class="brand-name">The North Hills Brief</span>
+        <span class="brand-sub">Filed from West View, PA</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#method">Method</a>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#about">About</a>
+      <a class="btn-nav-cta" href="#subscribe">Subscribe</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap" style="border-bottom:none; padding-bottom:0;">
+    <a class="back-link" href="beauty-pulse.html">← Beauty Pulse</a>
+    <div class="docket-line">
+      <span>Preview issue</span>
+      <span><strong>Every two weeks</strong></span>
+      <span>No. 03 &middot; September 27, 2026</span>
+    </div>
+    <h1>This is what a salon owner gets every two weeks.</h1>
+    <p class="hero-sub">One page. Posted prices from 24 salon menus in West View, Ross, Shaler and McCandless, the wage figure behind your next job offer, and a short list of checks to run on your own shop. Every number carries its source and its date.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#subscribe">Get the next issue</a>
+      <a class="btn btn-ghost" href="/issues/issuebeautypulse0320260927.pdf" target="_blank" rel="noopener">Download this issue (PDF)</a>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-top:0;">
+
+    <article class="issue" aria-label="Beauty Pulse No. 03, full issue">
+      <div class="issue-head">
+        <div class="issue-title">The North Hills Brief</div>
+        <div class="issue-meta">
+          <strong>Beauty Pulse</strong>
+          No. 03 &middot; September 27, 2026<br>
+          Every two weeks
+        </div>
+      </div>
+      <div class="issue-towns">West View &middot; Ross &middot; Shaler &middot; Ohio Twp &middot; McCandless &middot; Franklin Park</div>
+      <p class="issue-reader">For salon owners in six towns north of Pittsburgh.</p>
+
+      <p class="issue-lead">Half the posted cut prices in the six towns sit in one ten-dollar band, $45 to $55, and color has no going rate at all.</p>
+
+      <div class="issue-stats">
+        <div class="issue-stat"><div class="num">24</div><div class="label">Salons post a cut price</div><div class="sub">West View, Ross, Shaler, McCandless.</div></div>
+        <div class="issue-stat"><div class="num">$49</div><div class="label">Floor median</div><div class="sub">Women's cut, menus read September 10 to 17.</div></div>
+        <div class="issue-stat"><div class="num">$75</div><div class="label">Color floor median</div><div class="sub">21 shops, $30 to $180.</div></div>
+        <div class="issue-stat"><div class="num">12 of 24</div><div class="label">Cut floors in the band</div><div class="sub">$45 to $55.</div></div>
+      </div>
+
+      <div class="issue-cols">
+        <div>
+          <h3>What the shops charge</h3>
+          <table>
+            <thead><tr><th>Service</th><th class="n">Shops posting</th><th class="n">Low</th><th class="n">Floor median</th><th class="n">High</th></tr></thead>
+            <tbody>
+              <tr><td>Women's cut</td><td class="n">24</td><td class="n">$19</td><td class="n">$49</td><td class="n">$65</td></tr>
+              <tr><td>Color</td><td class="n">21</td><td class="n">$30</td><td class="n">$75</td><td class="n">$180</td></tr>
+            </tbody>
+          </table>
+          <p>Twelve of the 24 cut floors sit between $45 and $55. Six of them sit at exactly $55. Color floors run from $30 to $180, six to one, with no band in between. West View's $20 floor is one shop, not a town price.</p>
+
+          <h3 style="margin-top:22px;">What labor costs</h3>
+          <table>
+            <thead><tr><th>Figure</th><th class="n">Value</th><th>Geography</th><th>As of</th></tr></thead>
+            <tbody>
+              <tr><td>Hair stylist and cosmetologist, hourly average</td><td class="n">$25.88</td><td>Pittsburgh, PA (general market)</td><td>September 6, 2026</td></tr>
+              <tr><td>Same, posted range</td><td class="n">$12.28 to $54.52</td><td>Pittsburgh, PA (general market)</td><td>September 6, 2026</td></tr>
+            </tbody>
+          </table>
+          <p>This is a Pittsburgh general-market figure, from 91 salaries in postings over 36 months, not a six-town figure. There is no six-town wage figure this issue.</p>
+        </div>
+        <div>
+          <h3>Shops by town</h3>
+          <table>
+            <thead><tr><th>Town</th><th class="n">Salons posting a cut price</th></tr></thead>
+            <tbody>
+              <tr><td>Ross Township</td><td class="n">15</td></tr>
+              <tr><td>Shaler Township</td><td class="n">4</td></tr>
+              <tr><td>Town of McCandless</td><td class="n">4</td></tr>
+              <tr><td>West View Borough</td><td class="n">1</td></tr>
+              <tr><td>Ohio Township</td><td class="nm">Not measured</td></tr>
+              <tr><td>Franklin Park Borough</td><td class="nm">Not measured</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="issue-checks">
+        <h3>Use this week</h3>
+        <ol>
+          <li>Check your posted cut price against the $45 to $55 band. Twelve of 24 shops sit inside it.</li>
+          <li>Compare your color floor to the local spread of $30 to $180. There is no going rate.</li>
+          <li>Check whether you sit above $55. Six shops are at exactly $55, and the highest floor is $65.</li>
+          <li>Compare any job offer you post to $25.88 an hour, the Pittsburgh, PA general-market average as of September 6.</li>
+        </ol>
+      </div>
+
+      <div class="issue-box">
+        <strong>How we counted.</strong> Prices come from each shop's own public menu, read September 10 to 17, 2026. A shop's floor is the lowest price it posts for that service. Where a menu posts one haircut price without naming a gender, that price is the women's cut floor. Barbershops, children's salons and Hampton Township shops are left out. Ohio Township and Franklin Park have not been measured yet. The salon license count is not printed this issue while the state register's town matching is checked. Last issue's 27 covered a wider area that included Hampton. This issue's 24 covers the six towns only, and no shop closed. Wages: Indeed, Pittsburgh, PA general market, read September 6, 2026.
+      </div>
+
+      <div class="issue-foot">
+        <div>
+          <div><strong>The Brief does not sell placements.</strong> Paid work to act on these numbers is a separate engagement.</div>
+          <div class="next">Coming next: lash, nail and brow prices from the same 24 menus.</div>
+        </div>
+        <div class="mast">The North Hills Brief &middot; Beauty Pulse &middot; northhillsbrief.com</div>
+      </div>
+    </article>
+
+    <p class="preview-note">Every figure above was recomputed from the source files before it printed, and each one carries its source, its geography and its date. That is the rule for every issue, not just this one.</p>
+    <div class="preview-actions">
+      <a class="btn btn-primary" href="#subscribe">Get the next issue</a>
+      <a class="btn btn-ghost" href="/issues/issuebeautypulse0320260927.pdf" target="_blank" rel="noopener">Download this issue (PDF)</a>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="sources-bar">
+      <span><a href="real-estate-edition.html">Real Estate Edition</a></span>
+      <span><span class="current">Beauty Pulse</span></span>
+      <span><a href="beauty-shop-math.html">Beauty Shop Math</a></span>
+      <span><a href="hvac-pulse.html">HVAC Pulse</a></span>
+    </div>
+  </div>
+
+  <section id="subscribe" class="subscribe wrap" style="border-bottom:none;">
+    <div class="subscribe-box">
+      <div>
+        <span class="eyebrow" style="color:var(--inverse-accent);">Beauty Pulse</span>
+        <h2>Get the next issue before your competitor does.</h2>
+        <p>Every two weeks, by email, one page. Leave your email and Fred will send you the current issue and set you up.</p>
+        <p style="font-size:0.9rem;">Prefer to talk? Call (440) 595-4133 or write fred@northhillsbrief.com.</p>
+      </div>
+      <form class="subscribe-form" name="sample-request" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="sample-request">
+        <input type="hidden" name="source" value="Beauty Pulse preview">
+        <p class="hp" hidden><label>Leave this empty: <input name="bot-field"></label></p>
+        <label for="email-input">Email address</label>
+        <div class="row">
+          <input id="email-input" type="email" name="email" placeholder="you@yoursalon.com" required>
+          <button type="submit">Send me the next issue</button>
+        </div>
+        <p class="form-note">One email, no list, no sharing.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site wrap">
+    <span>&copy; 2026 The North Hills Brief &middot; West View, PA</span>
+    <span class="footer-links">
+      <a href="https://x.com/northhillsbrief" rel="me noopener" target="_blank">X</a>
+      <span class="sep">&middot;</span>
+      <a href="https://www.instagram.com/northhillsbrief/" rel="me noopener" target="_blank">Instagram</a>
+      <span class="sep">&middot;</span>
+      <a href="mailto:hello@northhillsbrief.com">hello@northhillsbrief.com</a>
+      <span class="sep">&middot;</span>
+      <a href="https://desk.northhillsbrief.com">Let Desk</a>
+    </span>
+  </footer>
+
+</main>
+
+<script>
+  (function(){
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if(toggle && links){
+      toggle.addEventListener('click', function(){
+        var open = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      links.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          links.classList.remove('open');
+          toggle.setAttribute('aria-expanded','false');
+        });
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
