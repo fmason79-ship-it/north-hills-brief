@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /Historical/
 
 Sitemap: https://northhillsbrief.com/sitemap.xml
