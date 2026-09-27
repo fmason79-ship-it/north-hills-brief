@@ -1,0 +1,5 @@
+# Netlify redirects. Retired product pages point at Property Pulse (26 Sep 2026).
+/real-estate-edition        /property-pulse  301
+/real-estate-edition.html   /property-pulse  301
+/hvac-pulse                 /property-pulse  301
+/hvac-pulse.html            /property-pulse  301
