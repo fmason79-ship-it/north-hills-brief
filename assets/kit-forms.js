@@ -8,16 +8,21 @@
   Array.prototype.forEach.call(forms, function (form) {
     form.addEventListener('submit', function (ev) {
       if (form.dataset.kitSent === 'yes') return;
+      if (form.dataset.kitPending === 'yes') { ev.preventDefault(); return; }
       var id = form.getAttribute('data-kit-form');
       var email = form.querySelector('input[type="email"]');
       var honeypot = form.querySelector('input[name="bot-field"]');
       if (!id || !email || !email.value || (honeypot && honeypot.value)) return;
       ev.preventDefault();
+      form.dataset.kitPending = 'yes';
+      var button = form.querySelector('button[type="submit"]');
+      if (button) button.disabled = true;
       var finished = false;
       var finish = function () {
         if (finished) return;
         finished = true;
         form.dataset.kitSent = 'yes';
+        if (button) button.disabled = false;
         if (typeof form.requestSubmit === 'function') form.requestSubmit(); else form.submit();
       };
       var timer = setTimeout(finish, 4000);
