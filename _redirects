@@ -3,3 +3,18 @@
 /real-estate-edition.html   /property-pulse  301
 /hvac-pulse                 /property-pulse  301
 /hvac-pulse.html            /property-pulse  301
+
+# Tracked short links (28 Sep 2026). Status 200 is a rewrite, not a redirect:
+# the visitor sees the normal page, but the address bar keeps the short path,
+# so Cloudflare Web Analytics counts each channel separately under Paths.
+# Cloudflare ignores ?utm= tags, which is why these are paths instead.
+# Every page carries a canonical tag, so search engines index the real page.
+/ig             /index.html                  200
+/ig-docket      /weekly-docket.html          200
+/x              /index.html                  200
+/x-docket       /weekly-docket.html          200
+/yt             /index.html                  200
+/yt-docket      /weekly-docket.html          200
+/kit            /index.html                  200
+/kit-docket     /weekly-docket.html          200
+/salons         /beauty-pulse-preview.html   200
