@@ -4,3 +4,23 @@
   Cache-Control: no-cache
 /assets/*
   Cache-Control: no-cache
+
+# Tracked short links: keep them out of search results.
+/ig
+  X-Robots-Tag: noindex
+/ig-docket
+  X-Robots-Tag: noindex
+/x
+  X-Robots-Tag: noindex
+/x-docket
+  X-Robots-Tag: noindex
+/yt
+  X-Robots-Tag: noindex
+/yt-docket
+  X-Robots-Tag: noindex
+/kit
+  X-Robots-Tag: noindex
+/kit-docket
+  X-Robots-Tag: noindex
+/salons
+  X-Robots-Tag: noindex
