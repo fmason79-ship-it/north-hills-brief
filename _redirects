@@ -18,3 +18,16 @@
 /kit            /index.html                  200
 /kit-docket     /weekly-docket.html          200
 /salons         /beauty-pulse-preview.html   200
+
+# Let Desk tracked short links (29 Sep 2026). Each one shows let-desk-go.html
+# under its own short path (so Cloudflare counts it), which then sends the
+# visitor on to the Let Desk sample board at desk.northhillsbrief.com/preview.
+/desk            /let-desk-go.html   200
+/desk-ig         /let-desk-go.html   200
+/desk-x          /let-desk-go.html   200
+/desk-yt         /let-desk-go.html   200
+/desk-kit        /let-desk-go.html   200
+/desk-beattie    /let-desk-go.html   200
+/desk-parkway    /let-desk-go.html   200
+/desk-rosedale   /let-desk-go.html   200
+/desk-abc        /let-desk-go.html   200
