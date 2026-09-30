@@ -18,6 +18,7 @@
 /kit            /index.html                  200
 /kit-docket     /weekly-docket.html          200
 /salons         /beauty-pulse-preview.html   200
+/hockey         /index.html                  200
 
 # Let Desk tracked short links (29 Sep 2026). Each one shows let-desk-go.html
 # under its own short path (so Cloudflare counts it), which then sends the
