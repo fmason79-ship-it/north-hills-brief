@@ -5,6 +5,10 @@
 /assets/*
   Cache-Control: no-cache
 
+# The app's home-screen file, served with its proper type.
+/app/manifest.webmanifest
+  Content-Type: application/manifest+json
+
 # Tracked short links: keep them out of search results.
 /ig
   X-Robots-Tag: noindex
