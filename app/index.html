@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Look up and follow what was filed in six North Hills towns: property sales, zoning requests, council decisions and permit fees, each with its source and date.">
+<meta name="theme-color" content="#14503F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NH Brief">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<title>The North Hills Brief</title>
+<style>
+/* Fonts are served from this site, so the app keeps its type with no connection. */
+@font-face{font-family:'Sora';font-style:normal;font-weight:100 800;font-display:swap;src:url(fonts/sora-latin.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 1000;font-display:swap;src:url(fonts/dmsans-latin.woff2) format('woff2')}
+@font-face{font-family:'Lora';font-style:normal;font-weight:600 700;font-display:swap;src:url(/assets/fonts/lora-latin.woff2) format('woff2')}
+/* Layout: one phone-width column, a fixed four-tab bar at the bottom, the week's lead line as the only large type. */
+:root{
+  --bg:#F3F6F4; --surface:#FFFFFF; --ink:#10141F; --soft:#3B4256; --muted:#667085; --rule:#D8DFDA;
+  --pine:#14503F; --pine2:#3E8F70; --accent:#14503F; --on-pine:#FFFFFF; --chip:#E5EDE8;
+  --wait:#8A5A00; --wait-bg:#FAF0D7; --new:#C7401F; --note:#7A8094;
+  --display:'Sora','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --body:'DM Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  --mark:'Lora',Georgia,'Times New Roman',serif;
+  padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#10141F; --surface:#181D2B; --ink:#EEF1F0; --soft:#C5CBD8; --muted:#9299AB; --rule:#2B3244;
+  --pine:#1F6B54; --pine2:#3E8F70; --accent:#82C4A5; --on-pine:#FFFFFF; --chip:#1F2738;
+  --wait:#E8C56B; --wait-bg:#3A3118; --new:#F08A6C; --note:#8E96A8; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#10141F; --surface:#181D2B; --ink:#EEF1F0; --soft:#C5CBD8; --muted:#9299AB; --rule:#2B3244;
+  --pine:#1F6B54; --pine2:#3E8F70; --accent:#82C4A5; --on-pine:#FFFFFF; --chip:#1F2738;
+  --wait:#E8C56B; --wait-bg:#3A3118; --new:#F08A6C; --note:#8E96A8; color-scheme:dark }
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding-block:14px 104px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent)}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--pine2);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
+p{margin:0}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:2px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--mark);font-weight:700;font-size:1.02rem;color:var(--ink);text-decoration:none}
+.brand svg{width:38px;height:15px;flex:none}
+.top small{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:right}
+
+.view{display:flex;flex-direction:column;gap:34px;padding-top:22px}
+.eyebrow{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.lead{font-size:clamp(1.75rem,7vw,2.7rem);font-weight:600;line-height:1.14;letter-spacing:-.025em;margin-top:10px}
+.hero .sub{color:var(--soft);margin-top:12px;max-width:60ch}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.hero .row{margin-top:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:8px;border:1px solid var(--pine);background:var(--pine);color:var(--on-pine);font-weight:700;font-size:.95rem;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border-color:var(--rule)}
+.btn svg,.tab svg,.mini svg{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.sec{display:flex;flex-direction:column;gap:10px}
+.sec>h2{font-size:1.12rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.sec>.hint{color:var(--soft);font-size:.93rem;max-width:62ch}
+.group{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:10px}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:38px;padding:0 13px;border-radius:999px;border:1px solid var(--rule);background:var(--surface);color:var(--soft);font-size:.9rem;font-weight:500;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--pine);border-color:var(--pine);color:var(--on-pine)}
+
+.list{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
+.item{border-bottom:1px solid var(--rule)}
+.item>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:10px minmax(0,1fr);column-gap:10px;padding:12px 0}
+.item>summary::-webkit-details-marker{display:none}
+.dot{width:10px;height:10px;border-radius:50%;margin-top:5px;border:2px solid var(--note);background:transparent}
+.dot.decided{background:var(--pine2);border-color:var(--pine2)}
+.dot.recorded{background:var(--ink);border-color:var(--ink)}
+.dot.scheduled,.dot.agenda{border-color:var(--wait)}
+.dot.draft{border-color:var(--pine2)}
+.kick{font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.kick b{color:var(--ink);font-weight:700}
+.ttl{display:block;font-family:var(--display);font-weight:600;font-size:1rem;line-height:1.3;margin-top:2px}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.pill{font-size:.7rem;font-weight:700;letter-spacing:.04em;padding:2px 8px;border-radius:4px;background:var(--wait-bg);color:var(--wait)}
+.pill.new{background:transparent;color:var(--new);border:1px solid var(--new)}
+.pill.fol{background:var(--chip);color:var(--accent)}
+.ibody{padding:0 0 14px 20px;display:flex;flex-direction:column;gap:8px}
+.ibody p{max-width:65ch}
+.src{font-style:italic;color:var(--muted);font-size:.88rem}
+.thread{font-size:.88rem;color:var(--soft);border-left:2px solid var(--pine2);padding-left:10px}
+.thread a{font-weight:700}
+.mini{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 12px;border-radius:8px;border:1px solid var(--rule);background:var(--surface);color:var(--accent);font-weight:700;font-size:.86rem;cursor:pointer;text-decoration:none}
+.mini[aria-pressed="true"]{background:var(--chip)}
+
+.seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+.seg button{min-height:42px;border:0;background:var(--surface);color:var(--soft);font-weight:700;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--pine);color:var(--on-pine)}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1 1 150px}
+.field label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.field select,.field input{min-height:44px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);padding:0 12px;width:100%}
+.count{font-size:.88rem;color:var(--muted);font-variant-numeric:tabular-nums}
+
+.answer{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.answer .fee{font-family:var(--display);font-weight:600;font-size:1.3rem;line-height:1.25;letter-spacing:-.01em}
+.answer ul{margin:0;padding-left:18px;color:var(--soft)}
+.tablebox{overflow-x:auto;border:1px solid var(--rule);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;min-width:560px;width:100%;font-size:.88rem}
+th,td{text-align:left;vertical-align:top;padding:9px 11px;border-bottom:1px solid var(--rule)}
+th{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+
+.prod{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.prod h3{font-size:1rem;font-weight:600}
+.prod .price{font-family:var(--display);font-weight:600;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.prod p{grid-column:1/-1;color:var(--soft);font-size:.93rem;max-width:62ch}
+.prod .row{grid-column:1/-1;margin-top:4px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.plain{color:var(--soft);font-size:.93rem;max-width:65ch}
+.issues{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.issues li{display:grid;grid-template-columns:3.2em minmax(0,1fr);gap:8px;padding:10px 0;border-bottom:1px solid var(--rule);font-size:.93rem}
+.issues .no{font-family:var(--display);font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+.foot{font-size:.8rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:14px}
+.empty{border:1px dashed var(--rule);border-radius:10px;padding:16px;color:var(--soft)}
+
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--rule);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(8px,env(safe-area-inset-left,0px));padding-right:max(8px,env(safe-area-inset-right,0px))}
+.tabs div{max-width:720px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.tab{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:58px;border:0;background:transparent;color:var(--muted);font-size:.72rem;font-weight:700;text-decoration:none;cursor:pointer}
+.tab[aria-current="page"]{color:var(--accent)}
+.tab[aria-current="page"]::before{content:"";position:absolute;top:0;left:22%;right:22%;height:3px;background:var(--pine2);border-radius:0 0 3px 3px}
+.badge{position:absolute;top:7px;left:calc(50% + 6px);min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:var(--new);color:var(--surface);font-size:.66rem;line-height:17px;text-align:center}
+@media (prefers-reduced-motion:no-preference){ .view{animation:in .18s ease-out} @keyframes in{from{transform:translateY(4px)}to{transform:none}} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#week"><svg viewBox="0 0 260 100" aria-hidden="true"><path fill="#3E8F70" d="M128.0 90.0 Q155.0 13.0, 182.0 13.0 Q214.5 13.0, 247.0 90.0 Z"/><path fill="var(--pine)" d="M14.0 90.0 Q56.5 0.0, 99.0 0.0 Q137.5 0.0, 176.0 90.0 Z"/><rect x="0" y="90" width="260" height="10" rx="5" fill="var(--pine)"/></svg>The North Hills Brief</a>
+    <small>Six towns<br>from the record</small>
+  </header>
+  <main id="app"><div class="view"><p class="plain">Loading the record for the six towns.</p></div></main>
+</div>
+<nav class="tabs" aria-label="Sections"><div>
+  <a class="tab" href="#week" data-tab="week"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>This week</a>
+  <a class="tab" href="#lookup" data-tab="lookup"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>Look up</a>
+  <a class="tab" href="#following" data-tab="following"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg>Following<span class="badge" id="badge" hidden></span></a>
+  <a class="tab" href="#more" data-tab="more"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>More</a>
+</div></nav>
+<script>
+(function(){
+var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+var GROUPS={scheduled:'Scheduled',agenda:'On the agenda',draft:'Draft minutes',decided:'Decided',recorded:'Recorded',note:'Notes'};
+var SIGNUP='https://buttondown.com/NorthHillsBrief';
+var BELL='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg>';
+var OUT='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>';
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function longDate(iso){var p=iso.split('-');return MONTHS[+p[1]-1]+' '+(+p[2])+', '+p[0]}
+function no(n){return 'No. '+(n<10?'0':'')+n}
+function load(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+
+function start(D){
+  var app=document.getElementById('app');
+  var latest=D.issues[0];
+  var F=load('nhb.follows',{towns:[],topics:[],items:[]});
+  F.towns=F.towns||[];F.topics=F.topics||[];F.items=F.items||[];
+  var seen=load('nhb.seen',null); var prev=(seen===null)?latest.n-1:seen; var viewed=false;
+  var S={mode:'filings',q:'',town:'',topic:'',g:'',ptown:'Ross',pjob:'replace'};
+  var byId={};D.items.forEach(function(x){byId[x.id]=x});
+
+  function key(it){return it.th||it.id}
+  function followsItem(it){return F.items.indexOf(key(it))>-1}
+  function matches(it){return followsItem(it)||F.topics.indexOf(it.topic)>-1||it.towns.some(function(t){return F.towns.indexOf(t)>-1})}
+  function isNew(it){return it.n>prev}
+  function anyFollow(){return F.towns.length+F.topics.length+F.items.length>0}
+  function where(it){return it.tl||it.towns.slice().sort().join(', ')}
+
+  function card(it){
+    var pills='';
+    if(it.open)pills+='<span class="pill">Waiting on outcome</span>';
+    if(isNew(it)&&matches(it))pills+='<span class="pill new">New for you</span>';
+    if(followsItem(it))pills+='<span class="pill fol">Following</span>';
+    var th='';
+    if(it.th){var sib=D.items.filter(function(x){return x.th===it.th&&x.id!==it.id});
+      if(sib.length)th='<p class="thread">Same matter in other issues: '+sib.map(function(x){return '<a href="#lookup" data-act="open" data-id="'+x.id+'">'+no(x.n)+'</a> ('+esc(x.t)+')'}).join('; ')+'</p>'}
+    if(it.ref){th+='<p class="thread">This note refers to: '+it.ref.map(function(r){return '<a href="#lookup" data-act="open" data-id="'+r+'">'+esc(byId[r].t)+'</a>'}).join('; ')+'</p>'}
+    var iss=D.issues.filter(function(x){return x.n===it.n})[0];
+    return '<details class="item" id="'+it.id+'"><summary><span class="dot '+it.g+'" title="'+GROUPS[it.g]+'"></span><span><span class="kick"><b>'+esc(where(it))+'</b> · '+esc(it.kick)+'</span><span class="ttl">'+esc(it.t)+'</span>'+(pills?'<span class="pills">'+pills+'</span>':'')+'</span></summary>'+
+      '<div class="ibody"><p>'+esc(it.b)+'</p><p class="src">'+esc(it.s)+' · Weekly Docket '+no(it.n)+', week of '+longDate(iss.week)+'</p>'+th+
+      '<div class="row"><button class="mini" data-act="fitem" data-id="'+it.id+'" aria-pressed="'+followsItem(it)+'">'+BELL+(followsItem(it)?'Following':'Follow this')+'</button><a class="mini" href="'+iss.pdf+'" target="_blank" rel="noopener">'+OUT+'Read '+no(it.n)+' as printed</a></div></div></details>';
+  }
+  function list(items){return items.length?'<div class="list">'+items.map(card).join('')+'</div>':''}
+  function chips(kind,values){return '<div class="chips">'+values.map(function(v){return '<button class="chip" data-act="f'+kind+'" data-v="'+esc(v)+'" aria-pressed="'+(F[kind].indexOf(v)>-1)+'">'+esc(v)+'</button>'}).join('')+'</div>'}
+
+  function vWeek(){
+    var cur=D.items.filter(function(x){return x.n===latest.n});
+    var mine=cur.filter(matches);
+    var open=D.items.filter(function(x){return x.open}).sort(function(a,b){return a.d<b.d?1:-1});
+    var h='<section class="hero"><p class="eyebrow">The Weekly Docket · '+no(latest.n)+' · Week of '+longDate(latest.week)+'</p><h1 class="lead">'+esc(latest.lead)+'</h1>'+
+      '<p class="sub">Every item below names its source and date. Businesses, public bodies and addresses print. People do not.</p>'+
+      '<div class="row"><a class="btn" href="'+SIGNUP+'" target="_blank" rel="noopener">Get the Docket by email, free</a><a class="btn ghost" href="'+latest.pdf+'" target="_blank" rel="noopener">'+OUT+'Read '+no(latest.n)+' as printed</a></div></section>';
+    h+='<section class="sec"><h2>'+(anyFollow()?'In '+no(latest.n)+' for what you follow':'Pick your towns')+'</h2>'+
+      (anyFollow()?(mine.length?list(mine):'<p class="empty">Nothing in '+no(latest.n)+' matches what you follow. The full issue is below.</p>'):'<p class="hint">Follow a town and its items move to the top each week.</p>')+
+      chips('towns',D.towns)+'</section>';
+    h+='<section class="sec"><h2>Waiting on an outcome: '+open.length+' items</h2><p class="hint">Each was scheduled, on an agenda or put off to a later meeting, and the Docket hasn\'t printed what happened yet. An outcome prints when the minutes post. Follow one to see it here when it does.</p>'+list(open)+'</section>';
+    h+='<section class="sec"><h2>Everything in '+no(latest.n)+'</h2>';
+    D.topics.forEach(function(t){var g=cur.filter(function(x){return x.topic===t});if(g.length)h+='<p class="group">'+esc(t)+'</p>'+list(g)});
+    return h+'</section>';
+  }
+
+  function results(){
+    var q=S.q.toLowerCase().split(/\s+/).filter(Boolean);
+    return D.items.filter(function(x){
+      if(S.town&&x.towns.indexOf(S.town)<0)return false;
+      if(S.topic&&x.topic!==S.topic)return false;
+      if(S.g==='open'){if(!x.open)return false}else if(S.g&&x.g!==S.g)return false;
+      if(!q.length)return true;
+      var hay=(x.t+' '+x.b+' '+x.s+' '+where(x)+' '+x.topic+' '+x.kick).toLowerCase();
+      return q.every(function(w){return hay.indexOf(w)>-1});
+    }).sort(function(a,b){return a.d<b.d?1:(a.d>b.d?-1:0)});
+  }
+  function resHtml(){var r=results();return '<p class="count">'+r.length+' of '+D.items.length+' items, Nos. 01 to '+(latest.n<10?'0':'')+latest.n+', newest record first</p>'+(r.length?list(r):'<p class="empty">No item matches. Clear a filter, or search a street name such as McKnight or Babcock.</p>')}
+  function opt(v,l,cur){return '<option value="'+esc(v)+'"'+(v===cur?' selected':'')+'>'+esc(l)+'</option>'}
+  function permit(){
+    var r=D.permits.rows.filter(function(x){return x.town===S.ptown})[0];
+    return '<div class="answer"><p class="kick"><b>'+esc(r.name)+'</b> · '+(S.pjob==='replace'?'Replace a furnace':'Add A/C where there was none')+'</p><p class="fee">'+esc(r[S.pjob])+'</p><p><b>Watch for:</b> '+esc(r.watch)+'</p><ul>'+r.detail.map(function(d){return '<li>'+esc(d)+'</li>'}).join('')+'</ul><p class="src">'+esc(r.src)+' · Fees as of '+D.permits.asOf+'</p></div>';
+  }
+  function vLookup(){
+    var h='<section class="sec"><h1 class="sec-h" style="font-size:1.45rem;font-weight:600;letter-spacing:-.02em;line-height:1.2">Look up the record</h1><div class="seg"><button data-act="mode" data-v="filings" aria-pressed="'+(S.mode==='filings')+'">Filings and decisions</button><button data-act="mode" data-v="permits" aria-pressed="'+(S.mode==='permits')+'">Permit fees</button></div></section>';
+    if(S.mode==='filings'){
+      h+='<section class="sec"><div class="row"><div class="field" style="flex-basis:100%"><label for="q">Search a street, business or board</label><input id="q" type="search" placeholder="McKnight, data center, firehall" value="'+esc(S.q)+'" autocomplete="off"></div>'+
+        '<div class="field"><label for="ftown">Town</label><select id="ftown">'+opt('','All six towns',S.town)+D.towns.map(function(t){return opt(t,t,S.town)}).join('')+'</select></div>'+
+        '<div class="field"><label for="ftopic">Section</label><select id="ftopic">'+opt('','All sections',S.topic)+D.topics.map(function(t){return opt(t,t,S.topic)}).join('')+'</select></div>'+
+        '<div class="field"><label for="fg">Status</label><select id="fg">'+opt('','Any status',S.g)+opt('open','Waiting on outcome',S.g)+Object.keys(GROUPS).map(function(k){return opt(k,GROUPS[k],S.g)}).join('')+'</select></div></div>'+
+        '<div id="res" class="sec">'+resHtml()+'</div></section>';
+    }else{
+      h+='<section class="sec"><p class="hint">Find what a residential furnace or A/C permit costs in each town. Every fee is read from the town\'s adopted schedule, and a fee that isn\'t printed is marked as not printed.</p><div class="row"><div class="field"><label for="ptown">Town</label><select id="ptown">'+D.permits.rows.map(function(r){return opt(r.town,r.name,S.ptown)}).join('')+'</select></div><div class="field"><label for="pjob">Job</label><select id="pjob">'+opt('replace','Replace a furnace',S.pjob)+opt('add','Add A/C where there was none',S.pjob)+'</select></div></div><div id="pres">'+permit()+'</div></section>'+
+        '<section class="sec"><h2>Compare the six towns side by side</h2><div class="tablebox"><table><thead><tr><th>Town</th><th>Replace a furnace</th><th>Add A/C</th><th>Watch for</th></tr></thead><tbody>'+D.permits.rows.map(function(r){return '<tr><td><b>'+esc(r.name)+'</b></td><td>'+esc(r.replace)+'</td><td>'+esc(r.add)+'</td><td>'+esc(r.watch)+'</td></tr>'}).join('')+'</tbody></table></div><p class="plain">"State fee" is Pennsylvania\'s Uniform Construction Code fee, collected by the town. "No mechanical line" means the schedule prints no fee for HVAC work. It does not mean no permit is needed.</p><div class="row"><a class="mini" href="'+D.permits.url+'" target="_blank" rel="noopener">'+OUT+'Read the full permit page and sources</a></div></section>';
+    }
+    return h;
+  }
+
+  function vFollowing(){
+    var mine=D.items.filter(matches).sort(function(a,b){return a.d<b.d?1:-1});
+    var fresh=mine.filter(isNew);
+    var h='<section class="sec"><h1 style="font-size:1.45rem;font-weight:600;letter-spacing:-.02em;line-height:1.2">Following</h1><p class="hint">Choose towns and sections. Matching items show here, and anything printed since your last visit is marked new.</p><p class="group">Towns</p>'+chips('towns',D.towns)+'<p class="group">Sections</p>'+chips('topics',D.topics)+'</section>';
+    if(!anyFollow())return h+'<section class="sec"><p class="empty">You aren\'t following anything yet. Tap a town above, or open any item and tap Follow this.</p></section>';
+    h+='<section class="sec"><h2>New since your last visit: '+fresh.length+'</h2>'+(fresh.length?list(fresh):'<p class="empty">Nothing new for what you follow. The next Docket comes out Monday.</p>')+'</section>';
+    var rest=mine.filter(function(x){return !isNew(x)});
+    if(rest.length)h+='<section class="sec"><h2>Earlier items: '+rest.length+'</h2>'+list(rest)+'</section>';
+    return h+'<section class="sec"><p class="plain">Your choices are saved on this phone only. For a weekly reminder, get the Docket by email.</p><div class="row"><a class="btn" href="'+SIGNUP+'" target="_blank" rel="noopener">Get the Docket by email, free</a></div></section>';
+  }
+
+  function vMore(){
+    function prod(n,p,d,links){return '<div class="prod"><h3>'+n+'</h3><span class="price">'+p+'</span><p>'+d+'</p><div class="row">'+links+'</div></div>'}
+    function lk(u,l){return '<a class="mini" href="'+u+'" target="_blank" rel="noopener">'+OUT+l+'</a>'}
+    var W='https://northhillsbrief.com/';
+    return '<section class="sec"><h1 style="font-size:1.45rem;font-weight:600;letter-spacing:-.02em;line-height:1.2">One free weekly, two paid issues</h1><div style="border-top:1px solid var(--rule)">'+
+      prod('The Weekly Docket','Free','What was filed in the six towns this week: commercial property sales, restaurant openings, liquor licenses, zoning requests and council decisions.',lk(SIGNUP,'Get it by email'))+
+      prod('Property Pulse','$29 / month','The houses that sold last month in the six towns, how old they are, whether they have central air, and what the permit costs. It comes out the first Monday of each month.',lk(W+'property-pulse','See what\'s in an issue'))+
+      prod('Beauty Pulse','$15 / month','What North Hills salons post for a cut and a color, who just got licensed, and what stylists earn. It comes out every two weeks.',lk(W+'beauty-pulse-preview','Read a full sample issue'))+
+      prod('Beauty Shop Math','Custom quote','One North Hills salon, one quarter, the real numbers behind the chairs.',lk(W+'beauty-shop-math','See a sample'))+
+      '</div></section>'+
+      '<section class="two"><div class="sec"><h2>For contractors: Let Desk</h2><p class="plain">Public works before it is advertised, across Allegheny, Beaver, Butler, Lawrence, Washington, and Westmoreland Counties, for the firms that bid them. It is a living board, not a newsletter.</p><div class="row">'+lk('https://desk.northhillsbrief.com','Open Let Desk')+'</div></div>'+
+      '<div class="sec"><h2>How we read it</h2><p class="plain">Property sales are Allegheny County deeds. Liquor filings are the PLCB\'s, and food openings are the county Health Department\'s food permits. Agendas and minutes come from each town\'s own website. Agenda items print as scheduled, and only approved minutes print as decided. Unapproved minutes print as draft. It is not news, and it is not advice.</p><div class="row">'+lk(W+'corrections','Corrections')+'</div></div></section>'+
+      '<section class="sec"><h2>Every issue as it went out</h2><ul class="issues">'+D.issues.map(function(i){return '<li><span class="no">'+no(i.n)+'</span><span><a href="'+i.pdf+'" target="_blank" rel="noopener">Week of '+longDate(i.week)+'</a><br>'+esc(i.lead)+'</span></li>'}).join('')+'</ul></section>'+
+      '<p class="foot">The North Hills Brief · Filed from West View, PA · Published by Northline Studio · The Brief does not sell placements. Record current through Weekly Docket '+no(latest.n)+'.</p>';
+  }
+
+  var VIEWS={week:vWeek,lookup:vLookup,following:vFollowing,more:vMore};
+  function route(){var r=(location.hash||'').replace('#','');return VIEWS[r]?r:'week'}
+  function badge(){var n=(anyFollow()&&!viewed)?D.items.filter(function(x){return isNew(x)&&matches(x)}).length:0;var b=document.getElementById('badge');b.hidden=!n;b.textContent=n}
+  function render(keep){
+    var r=route(),y=window.scrollY,openIds=[].map.call(app.querySelectorAll('details[open]'),function(d){return d.id});
+    app.innerHTML='<div class="view">'+VIEWS[r]()+'</div>';
+    [].forEach.call(document.querySelectorAll('.tab'),function(t){if(t.dataset.tab===r)t.setAttribute('aria-current','page');else t.removeAttribute('aria-current')});
+    // An issue counts as seen once the Following tab has been opened, not on every load.
+    if(r==='following'){save('nhb.seen',latest.n);viewed=true}
+    badge();
+    if(keep){openIds.forEach(function(id){var d=document.getElementById(id);if(d)d.open=true});window.scrollTo(0,y)}else window.scrollTo(0,0);
+  }
+  var pending=null;
+  // Opens the item a link pointed at, after the Look up tab has drawn.
+  function show(){if(!pending)return;var d=document.getElementById(pending);pending=null;if(d){d.open=true;d.scrollIntoView({block:'center'})}}
+  function toggle(arr,v){var i=arr.indexOf(v);if(i>-1)arr.splice(i,1);else arr.push(v);save('nhb.follows',F)}
+
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('[data-act]');if(!el)return;var a=el.dataset.act;
+    if(a==='ftowns'){toggle(F.towns,el.dataset.v);render(true)}
+    else if(a==='ftopics'){toggle(F.topics,el.dataset.v);render(true)}
+    else if(a==='fitem'){toggle(F.items,key(byId[el.dataset.id]));render(true)}
+    else if(a==='mode'){S.mode=el.dataset.v;render(true)}
+    else if(a==='open'){e.preventDefault();S.mode='filings';S.q='';S.town='';S.topic='';S.g='';pending=el.dataset.id;
+      if(route()!=='lookup'){location.hash='lookup'}else{render(false);show()}}
+  });
+  function refresh(){var r=document.getElementById('res');if(r){r.innerHTML=resHtml();badge()}}
+  document.addEventListener('input',function(e){if(e.target.id==='q'){S.q=e.target.value;refresh()}});
+  document.addEventListener('change',function(e){var t=e.target;
+    if(t.id==='ftown'){S.town=t.value;refresh()}else if(t.id==='ftopic'){S.topic=t.value;refresh()}else if(t.id==='fg'){S.g=t.value;refresh()}
+    else if(t.id==='ptown'||t.id==='pjob'){S[t.id]=t.value;document.getElementById('pres').innerHTML=permit()}});
+  window.addEventListener('hashchange',function(){render(false);show()});
+  render(false);
+}
+function fail(){document.getElementById('app').innerHTML='<div class="view"><p class="empty">The record didn\'t load. Check your connection and open the app again.</p></div>'}
+if(window.__DATA)start(window.__DATA);
+else fetch('data.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(start).catch(fail);
+if(!window.__DATA&&'serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(function(){})}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,976 @@
+{
+ "built": "2026-11-08",
+ "towns": [
+  "Franklin Park",
+  "McCandless",
+  "Ohio Township",
+  "Ross",
+  "Shaler",
+  "West View"
+ ],
+ "topics": [
+  "Budgets and fees",
+  "Property that changed hands",
+  "Planning and zoning",
+  "Councils and boards",
+  "School boards",
+  "Food and drink"
+ ],
+ "issues": [
+  {
+   "n": 7,
+   "week": "2026-11-09",
+   "lead": "Ross's draft 2027 budget would raise the township's real estate tax from 4 to 4.5 mills.",
+   "pdf": "https://northhillsbrief.com/issues/weekly-docket-007.pdf"
+  },
+  {
+   "n": 6,
+   "week": "2026-11-02",
+   "lead": "Three business parcels on Babcock Blvd in Ross changed hands: 2016 and 2020 Babcock Blvd sold together for $1,805,000, and 3400 Babcock Blvd sold for $1,000,000.",
+   "pdf": "https://northhillsbrief.com/issues/weekly-docket-006.pdf"
+  },
+  {
+   "n": 5,
+   "week": "2026-10-26",
+   "lead": "McCandless is scheduled to hold a public hearing Monday on zoning changes that would let front-yard fences go from 3 feet to 4 feet.",
+   "pdf": "https://northhillsbrief.com/issues/weekly-docket-005.pdf"
+  },
+  {
+   "n": 4,
+   "week": "2026-10-19",
+   "lead": "McCandless approved splitting the former Rave Cinema site on McKnight Road into three lots.",
+   "pdf": "https://northhillsbrief.com/issues/weekly-docket-004.pdf"
+  },
+  {
+   "n": 3,
+   "week": "2026-10-12",
+   "lead": "Ross Township is weighing a draft ordinance that would allow data centers only on lots of 20 acres or more in its light industrial district.",
+   "pdf": "https://northhillsbrief.com/issues/weekly-docket-003.pdf"
+  },
+  {
+   "n": 2,
+   "week": "2026-10-05",
+   "lead": "A light manufacturing plant on William Flynn Highway in Glenshaw changed hands along with the warehouse next to it, the largest sale to reach the county file since No. 01.",
+   "pdf": "https://northhillsbrief.com/issues/weekly-docket-002.pdf"
+  },
+  {
+   "n": 1,
+   "week": "2026-09-28",
+   "lead": "A hotel at 8630 Duncan Avenue in McCandless sold for $19,005,000, the largest sale recorded in the six towns since August 1.",
+   "pdf": "https://northhillsbrief.com/issues/weekly-docket-001.pdf"
+  }
+ ],
+ "items": [
+  {
+   "id": "d07-01",
+   "n": 7,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Draft budget",
+   "topic": "Budgets and fees",
+   "g": "agenda",
+   "d": "2026-11-04",
+   "t": "2027 budget, on the Nov 4 agenda for presentation",
+   "b": "The draft puts the general fund at $30,187,816, up 3.12% from this year's budget, and says the rise in revenue comes mainly from the half-mill tax increase. Real estate tax would bring in $11,610,000, against $10,360,000 budgeted for 2026.",
+   "s": "Draft 2027 budget, Nov 4 committee packet",
+   "open": true,
+   "th": "ross-2027-budget",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-02",
+   "n": 7,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "On the agenda",
+   "topic": "Budgets and fees",
+   "g": "agenda",
+   "d": "2026-11-04",
+   "t": "Ambulance fee by business size, Nov 4",
+   "b": "A draft Ross ordinance would set the Ross/West View EMS fee at $80 a year per home and per apartment unit, and bill businesses by floor area, from $350 for up to 2,000 sq ft to $9,850 for more than 100,000 sq ft. It was on the agenda for introduction; the outcome prints when the minutes post.",
+   "s": "Draft ordinance and 2027 fee schedule, Nov 4 committee packet",
+   "open": true,
+   "th": "ross-ems-fee",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-03",
+   "n": 7,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Scheduled",
+   "topic": "Budgets and fees",
+   "g": "scheduled",
+   "d": "2026-11-09",
+   "t": "2027 budget presentation, Mon Nov 9",
+   "b": "The proposed budget keeps the real estate tax rate unchanged for a 22nd year. It sets the general fund at $20,415,526 and draws $2,539,576 from the town's general fund balance to cover it.",
+   "s": "Proposed 2027 budget, Nov 9 Council packet",
+   "open": true,
+   "th": "mccandless-2027-budget",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-04",
+   "n": 7,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Recorded Oct 14",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-10-14",
+   "t": "Six parcels on McKnight Rd and Berwyn Rd",
+   "b": "They sold together on one deed for $279,155, about 29.6 acres in all. The county lists four McKnight Rd parcels as vacant commercial land, one as a commercial auxiliary building and the Berwyn Rd parcel as vacant residential land. The sale is dated Oct 9.",
+   "s": "County deed, recorded Oct 14; late item",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-05",
+   "n": 7,
+   "towns": [
+    "Ohio Township"
+   ],
+   "kick": "Recorded Oct 1",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-10-01",
+   "t": "Office at 1508 Mount Nebo Rd, with 108 Nicholson Rd",
+   "b": "The one- to two-story office and a house at 108 Nicholson Rd sold together on one deed for $550,000, about 2 acres combined. The sale is dated Sep 17.",
+   "s": "County deed, recorded Oct 1; late item",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-06",
+   "n": 7,
+   "towns": [],
+   "kick": "Note",
+   "topic": "Property that changed hands",
+   "g": "note",
+   "d": "2026-11-09",
+   "t": "Deeds recorded Oct 28 through Oct 30",
+   "b": "Both deeds cover more than one parcel, and the Docket held them until now. None of the 24 deeds recorded in the six towns Oct 28 through Oct 30 that the county has posted so far is a business property.",
+   "s": "County deeds, in the file as updated Nov 8",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": [
+    "d07-04",
+    "d07-05"
+   ],
+   "wk": false
+  },
+  {
+   "id": "d07-07",
+   "n": 7,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "On the agenda",
+   "topic": "Planning and zoning",
+   "g": "agenda",
+   "d": "2026-11-04",
+   "t": "Data center ordinance up for introduction, Nov 4",
+   "b": "The ordinance, a discussion draft last month, would allow data centers only as a conditional use in the I-1 general commercial and light industrial district, on lots of at least 20 acres, at least 1,000 feet from residential and C-1 districts and from schools, parks and other listed sites such as day cares and hospitals. Buildings would be capped at 40 feet plus 15 feet of roof equipment.",
+   "s": "Draft ordinance, Nov 4 committee packet",
+   "open": true,
+   "th": "ross-data-center",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-08",
+   "n": 7,
+   "towns": [
+    "McCandless",
+    "Shaler"
+   ],
+   "kick": "Note",
+   "topic": "Planning and zoning",
+   "g": "note",
+   "d": "2026-11-09",
+   "t": "Two meetings canceled",
+   "b": "McCandless's zoning board has canceled its Nov 18 meeting, and Shaler's Planning Commission has canceled Nov 16 for lack of an agenda.",
+   "s": "Town websites, collected Nov 6",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-09",
+   "n": 7,
+   "towns": [
+    "Franklin Park"
+   ],
+   "kick": "Scheduled",
+   "topic": "Councils and boards",
+   "g": "scheduled",
+   "d": "2026-11-18",
+   "t": "Borough Council, Wed Nov 18",
+   "b": "Council is scheduled to vote on a $601,970 contract with Stonemile Group of Canonsburg, the only bidder, to design and build a 60-by-40-foot steel Public Works building with a retaining wall. It's also scheduled to vote on the Northland library's 2027 budget, with the borough paying up to $431,665.",
+   "s": "Tentative agenda, Nov 18, as of Nov 3",
+   "open": true,
+   "th": "fp-public-works",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-10",
+   "n": 7,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Draft minutes",
+   "topic": "Councils and boards",
+   "g": "draft",
+   "d": "2026-10-19",
+   "t": "Board of Commissioners, Oct 19",
+   "b": "Draft minutes show the commissioners approved moving a restaurant liquor license into Ross from Pittsburgh for West Penn Food Marts' convenience store at 333 Thompson Run Rd. A motion to allow deer hunting in designated township parks failed 0 to 9.",
+   "s": "Minutes in the Nov 4 packet, up for approval that night",
+   "open": false,
+   "th": "ross-oct19",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-11",
+   "n": 7,
+   "towns": [
+    "Ohio Township"
+   ],
+   "kick": "Draft minutes",
+   "topic": "Councils and boards",
+   "g": "draft",
+   "d": "2026-10-05",
+   "t": "Board of Supervisors, Oct 5",
+   "b": "Draft minutes show the supervisors passed Resolution 21-26, authorizing condemnation for emergency access through the Legacy Village community.",
+   "s": "Minutes collected Nov 6; approval not yet on record",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-12",
+   "n": 7,
+   "towns": [
+    "McCandless",
+    "Shaler",
+    "West View"
+   ],
+   "kick": "Note",
+   "topic": "Councils and boards",
+   "g": "note",
+   "d": "2026-11-09",
+   "t": "Minutes not posted yet",
+   "b": "Minutes haven't posted yet for McCandless's Oct 26, Shaler's Oct 13 or West View's Oct 14 meetings.",
+   "s": "Town websites, collected Nov 6",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-13",
+   "n": 7,
+   "towns": [
+    "Ross",
+    "West View"
+   ],
+   "kick": "On the agenda",
+   "topic": "School boards",
+   "g": "agenda",
+   "d": "2026-11-05",
+   "t": "Committee meeting with action, Nov 5",
+   "b": "The agenda carried Resolution 2026-06, which says the board won't raise any school tax for 2027-28 by more than its 4.3% state index, and a $287,720 bill from SitelogIQ Energy Services for the administration building roof. Outcomes print when the minutes post.",
+   "s": "Agenda packet, Nov 5 committee meeting with action",
+   "open": true,
+   "th": "nhsd-nov5",
+   "tl": "North Hills SD · Ross, West View",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d07-14",
+   "n": 7,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Note",
+   "topic": "Food and drink",
+   "g": "note",
+   "d": "2026-11-09",
+   "t": "Liquor licenses and food permits",
+   "b": "The PLCB showed no new license applications or transfers, and six licenses remain in safekeeping. In Ross, Buffalo Wild Wings GO at 7206 McKnight Rd, Suite 100, received a county food permit Oct 9; its opening date isn't confirmed.",
+   "s": "PLCB filings and county food permits, both checked Nov 6",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-01",
+   "n": 6,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Recorded",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-10-23",
+   "t": "Two parcels, 2016 and 2020 Babcock Blvd",
+   "b": "They sold together on one deed for $1,805,000. The county lists 2020 as light manufacturing and 2016 as a one- to two-story office, on about 1.7 acres combined. The sale is dated Oct 7.",
+   "s": "County deed, recorded Oct 23",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-02",
+   "n": 6,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Recorded",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-10-21",
+   "t": "Light-manufacturing site, 3400 Babcock Blvd",
+   "b": "The county lists the parcel as industrial, used for light manufacturing, on about 2.7 acres. The sale is dated Oct 15. The issue's lead line gives the price as $1,000,000.",
+   "s": "County deed, recorded Oct 21",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-03",
+   "n": 6,
+   "towns": [],
+   "kick": "Note",
+   "topic": "Property that changed hands",
+   "g": "note",
+   "d": "2026-11-02",
+   "t": "Deeds recorded Oct 20 through Oct 27",
+   "b": "They're the only business properties among the 44 deeds recorded in the six towns from Oct 20 through Oct 27 that the county has posted so far.",
+   "s": "County deeds, in the file as updated Oct 30",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": [
+    "d06-01",
+    "d06-02"
+   ],
+   "wk": false
+  },
+  {
+   "id": "d06-04",
+   "n": 6,
+   "towns": [
+    "Shaler"
+   ],
+   "kick": "Scheduled",
+   "topic": "Planning and zoning",
+   "g": "scheduled",
+   "d": "2026-11-12",
+   "t": "Zoning Hearing Board, Thu Nov 12",
+   "b": "Shaler Villa Volunteer Fire Company is asking for two variances at 960 Saxonburg Blvd: one for the precast block wall it has already built, and one to put a garage about 5 feet from the front property line, where 25 feet is required. Separately, the owners of a property on Butler Plank Rd in the Neighborhood Shopping district are asking for a use variance to rent part of it to a landscaping business for an office and storage yard.",
+   "s": "Agenda, Nov 12, posted Oct 28",
+   "open": true,
+   "th": "shaler-zhb-nov12",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-05",
+   "n": 6,
+   "towns": [
+    "McCandless",
+    "Franklin Park"
+   ],
+   "kick": "Note",
+   "topic": "Planning and zoning",
+   "g": "note",
+   "d": "2026-11-02",
+   "t": "No meetings",
+   "b": "McCandless's Planning Commission has canceled its Nov 4 meeting, and Franklin Park's zoning board has no new applications and no meeting Nov 12.",
+   "s": "Town websites, collected Oct 30",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-06",
+   "n": 6,
+   "towns": [
+    "Ohio Township"
+   ],
+   "kick": "Decided",
+   "topic": "School boards",
+   "g": "decided",
+   "d": "2026-10-13",
+   "t": "Board of School Directors, Oct 13",
+   "b": "The board approved letting Andrews & Price settle FAC Nebo Shopping Center LLC's tax appeals on the shopping center at 221 Mount Nebo Pointe Dr at assessed values of $7,846,900 for 2026 and $7,715,500 for 2027. It raised the cap on a 10-passenger van from $45,000 to $75,000, with the extra $30,000 from reserves, and approved Questeq's E-Rate services proposal for the 2027-28 school year.",
+   "s": "Approved, per the district's board notes, Oct 13 regular meeting; address from the county assessment file",
+   "open": false,
+   "th": null,
+   "tl": "Avonworth SD · Ohio Township",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-07",
+   "n": 6,
+   "towns": [],
+   "kick": "Note",
+   "topic": "School boards",
+   "g": "note",
+   "d": "2026-11-02",
+   "t": "Three districts with nothing new",
+   "b": "North Allegheny, North Hills and Shaler Area haven't posted minutes for any meeting since Oct 12 or an agenda for any meeting this week or later.",
+   "s": "District board sites, collected Oct 29",
+   "open": false,
+   "th": null,
+   "tl": "School districts",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-08",
+   "n": 6,
+   "towns": [
+    "West View"
+   ],
+   "kick": "Decided",
+   "topic": "Councils and boards",
+   "g": "decided",
+   "d": "2026-08-12",
+   "t": "Borough Council, Aug 12",
+   "b": "Council approved Resolution 1607, authorizing a final application to the state's Multimodal Transportation Fund for up to $887,250 for curbs, sidewalks, accessible crosswalks and traffic signals on Perry Hwy at Center Ave and West View Park Dr. It also approved a second payment of $114,417.33 to Deller Professional Services for demolishing 649 Center Ave and 403 Perry Hwy.",
+   "s": "Minutes, approved Sep 9, posted Oct 26",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-09",
+   "n": 6,
+   "towns": [
+    "West View"
+   ],
+   "kick": "Draft minutes",
+   "topic": "Councils and boards",
+   "g": "draft",
+   "d": "2026-09-09",
+   "t": "Borough Council, Sep 9",
+   "b": "Draft minutes show the borough got four bids for its No. 2 firehall at 14 Amherst Ave, the highest $175,111.10, and Council tabled the sale after the manager recommended waiting until the property's possible needs are evaluated. Council also approved a change order adding $85,195.82 to Youngblood Paving's 2026 paving contract for work through intersections and on the 900 block of Center Ave and Bellevue Ave.",
+   "s": "Minutes, posted Oct 26; their approval isn't on record yet",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-10",
+   "n": 6,
+   "towns": [
+    "Shaler"
+   ],
+   "kick": "On the agenda",
+   "topic": "Councils and boards",
+   "g": "agenda",
+   "d": "2026-10-27",
+   "t": "Commissioners' committees, Oct 27",
+   "b": "The agendas carried a proposed lease for the Stoneridge parking lot, a discussion of amending the open burning ordinance, access control for the municipal building and Public Works garage, and a request for proposals for a library facility assessment. Outcomes print when the minutes post.",
+   "s": "Committee agendas, Oct 27",
+   "open": true,
+   "th": "shaler-committees-oct27",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-11",
+   "n": 6,
+   "towns": [
+    "Ross",
+    "Shaler",
+    "West View",
+    "Franklin Park",
+    "McCandless"
+   ],
+   "kick": "Note",
+   "topic": "Councils and boards",
+   "g": "note",
+   "d": "2026-11-02",
+   "t": "Minutes not posted yet",
+   "b": "No minutes have posted yet for Ross's Oct 19, Shaler's Oct 13, West View's Oct 14, Franklin Park's Oct 21 or McCandless's Oct 26 meetings.",
+   "s": "Town websites, collected Oct 30",
+   "open": false,
+   "th": "ross-oct19",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d06-12",
+   "n": 6,
+   "towns": [],
+   "kick": "Note",
+   "topic": "Food and drink",
+   "g": "note",
+   "d": "2026-11-02",
+   "t": "Liquor licenses and food permits",
+   "b": "The PLCB showed no new license applications or transfers, and six licenses remain in safekeeping. The county's food permits show no new openings this week.",
+   "s": "PLCB filings and county food permits, both checked Oct 30",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-01",
+   "n": 5,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Public hearing scheduled",
+   "topic": "Planning and zoning",
+   "g": "scheduled",
+   "d": "2026-10-26",
+   "t": "Town Council, Mon Oct 26: zoning changes",
+   "b": "Council is scheduled to hold the public hearing on Ordinance 1576, a set of cleanup amendments to the zoning code the town adopted in 2023. Front-yard fences could go from 3 to 4 feet tall and from 20% to 50% solid, the change residents have asked for most. The draft also reworks the Town Center district's rules to account for its streams, floodplain and traffic, and adds rules for shopping centers and multi-tenant buildings.",
+   "s": "Agenda and staff memo, Oct 26 packet",
+   "open": true,
+   "th": "mccandless-ord-1576",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-02",
+   "n": 5,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Scheduled",
+   "topic": "Planning and zoning",
+   "g": "scheduled",
+   "d": "2026-10-26",
+   "t": "Two plans up for final votes the same night",
+   "b": "North Allegheny School District is asking for approval to add a natatorium of about 22,975 square feet, with a competition pool, at North Allegheny Senior High, 10375 Perry Hwy, plus more parking and reconfigured site roads. Pohl Construction's Harmony Manor plan would turn 8.6 acres at 9750 Harmony Rd into 12 single-family lots on a new street. The Planning Commission recommended both on Oct 6, with conditions.",
+   "s": "Agenda and staff reports, Oct 26 packet",
+   "open": true,
+   "th": "mccandless-oct26-plans",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-03",
+   "n": 5,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Scheduled",
+   "topic": "Planning and zoning",
+   "g": "scheduled",
+   "d": "2026-10-28",
+   "t": "Zoning Hearing Board, Wed Oct 28",
+   "b": "The board is scheduled to hear one appeal: a resident on Doral Dr is asking to put a 4.5-foot fence in a front yard.",
+   "s": "Agenda, Oct 28",
+   "open": true,
+   "th": "mccandless-zhb-oct28",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-04",
+   "n": 5,
+   "towns": [
+    "Shaler"
+   ],
+   "kick": "Transcript posted",
+   "topic": "Planning and zoning",
+   "g": "note",
+   "d": "2026-09-10",
+   "t": "Zoning Hearing Board, Sep 10",
+   "b": "Duquesne Light asked for a variance to build a 9,500-square-foot building for bucket trucks and equipment at 1899 Duquesne St, on a site partly in the Pine Creek floodplain, where accessory buildings are capped at 500 square feet. The board put the case off a month so someone from the company and the township could attend.",
+   "s": "Hearing transcript, posted by Oct 23",
+   "open": true,
+   "th": "shaler-zhb-duquesne-light",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-05",
+   "n": 5,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Recorded",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-10-13",
+   "t": "Gas station and convenience store, 1102 Perry Hwy",
+   "b": "It sold for $1,262,000. The county lists it as a convenience store with gas on about three-quarters of an acre.",
+   "s": "County deed, recorded Oct 13",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-06",
+   "n": 5,
+   "towns": [
+    "Franklin Park"
+   ],
+   "kick": "Recorded",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-10-16",
+   "t": "Farmland on Brandt School Rd",
+   "b": "About 7.6 acres the county lists as a general farm, with no house number, sold for $180,000.",
+   "s": "County deed, recorded Oct 16",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-07",
+   "n": 5,
+   "towns": [],
+   "kick": "Note",
+   "topic": "Property that changed hands",
+   "g": "note",
+   "d": "2026-10-26",
+   "t": "Deeds recorded Oct 7 through Oct 19",
+   "b": "They were the only single-parcel business sales among the 80 deeds in the six towns recorded Oct 7 through Oct 19 that the county has posted so far.",
+   "s": "County deeds, in the file as updated Oct 23",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": [
+    "d05-05",
+    "d05-06"
+   ],
+   "wk": false
+  },
+  {
+   "id": "d05-08",
+   "n": 5,
+   "towns": [
+    "McCandless",
+    "Ross",
+    "Shaler"
+   ],
+   "kick": "Note",
+   "topic": "Food and drink",
+   "g": "note",
+   "d": "2026-10-26",
+   "t": "Food permits and liquor licenses",
+   "b": "McCandless: Churn, inside Giant Eagle at 225 Blazier Dr, received a county food permit Oct 21. Two other new permits, in Ross and Shaler, carry no business name yet. The PLCB showed no new license applications, and six licenses remain in safekeeping.",
+   "s": "PLCB filings and county food permits, checked every Friday",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-09",
+   "n": 5,
+   "towns": [
+    "Franklin Park"
+   ],
+   "kick": "Decided",
+   "topic": "Councils and boards",
+   "g": "decided",
+   "d": "2026-09-16",
+   "t": "Borough Council, Sep 16",
+   "b": "Council voted to apply to the county's Redevelopment Authority for $276,700 for pedestrian work on Nicholson Rd, Lenora Dr and Rochester Rd, and approved $60,000 more for Civil & Environmental Consultants on the Bear Run and Fish Run stormwater projects. It approved a conditional use for a large detached garage on Sylvan Dr. At the pre-meeting, Council heard the borough won a $102,000 Local Share Account grant for a truck to serve as a police patrol and response vehicle.",
+   "s": "Minutes, posted Oct 22",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-10",
+   "n": 5,
+   "towns": [
+    "Franklin Park"
+   ],
+   "kick": "Work session",
+   "topic": "Councils and boards",
+   "g": "decided",
+   "d": "2026-10-07",
+   "t": "Borough Council, Oct 7",
+   "b": "The borough asked for $1.5 million for a Public Works building and got $500,000, so the project was redesigned as a cold storage building for equipment now kept outside. Bids are in, and Council may award in November or December after budget talks. The county plans to close Brandt School Rd to repair a large sinkhole; the detour isn't set yet.",
+   "s": "Minutes, posted Oct 22",
+   "open": false,
+   "th": "fp-public-works",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-11",
+   "n": 5,
+   "towns": [
+    "Franklin Park"
+   ],
+   "kick": "On the agenda",
+   "topic": "Councils and boards",
+   "g": "agenda",
+   "d": "2026-10-21",
+   "t": "Borough Council, Oct 21, amended agenda",
+   "b": "The amended agenda carried a road use agreement letting Denoon Lumber Company haul logs on Weinman Rd and State Gamelands Rd for a timber harvest, and a renewed approval for Deerfield Estates FP Development to split a Deerfield Estates lot on Nicholson Rd into two home lots. Outcomes print when the minutes post.",
+   "s": "Amended agenda, as of Oct 20",
+   "open": true,
+   "th": "fp-council-oct21",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-12",
+   "n": 5,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Manager's report",
+   "topic": "Councils and boards",
+   "g": "note",
+   "d": "2026-10-26",
+   "t": "Town Council packet, Oct 26",
+   "b": "The manager's report lists a data center ordinance review and says the town received approval for an enhanced cull permit for 2027.",
+   "s": "Manager's report, Oct 26 packet",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d05-13",
+   "n": 5,
+   "towns": [
+    "Ross",
+    "Shaler",
+    "West View"
+   ],
+   "kick": "Note",
+   "topic": "Councils and boards",
+   "g": "note",
+   "d": "2026-10-26",
+   "t": "Minutes not posted yet",
+   "b": "No minutes have posted yet for Ross's Oct 19, Shaler's Oct 13 or West View's Oct 14 meetings, so the liquor license, deer hunting and fire code votes print when they do.",
+   "s": "Town websites, collected Oct 23",
+   "open": false,
+   "th": "ross-oct19",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d04-01",
+   "n": 4,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Lead line, week of Oct 19",
+   "topic": "Planning and zoning",
+   "g": "decided",
+   "d": "2026-10-19",
+   "t": "Former Rave Cinema site on McKnight Road split into three lots",
+   "b": "McCandless approved splitting the former Rave Cinema site on McKnight Road into three lots. This is the issue's lead line. The full item is in the printed issue.",
+   "s": "Weekly Docket No. 04, week of October 19, 2026",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": true
+  },
+  {
+   "id": "d03-01",
+   "n": 3,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Lead line, week of Oct 12",
+   "topic": "Planning and zoning",
+   "g": "note",
+   "d": "2026-10-12",
+   "t": "Draft data center ordinance",
+   "b": "Ross Township is weighing a draft ordinance that would allow data centers only on lots of 20 acres or more in its light industrial district. This is the issue's lead line. The full item is in the printed issue.",
+   "s": "Weekly Docket No. 03, week of October 12, 2026",
+   "open": false,
+   "th": "ross-data-center",
+   "tl": null,
+   "ref": null,
+   "wk": true
+  },
+  {
+   "id": "d02-01",
+   "n": 2,
+   "towns": [
+    "Shaler"
+   ],
+   "kick": "Lead line, week of Oct 5",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-10-05",
+   "t": "Light manufacturing plant and warehouse, William Flynn Highway, Glenshaw",
+   "b": "A light manufacturing plant on William Flynn Highway in Glenshaw changed hands along with the warehouse next to it, the largest sale to reach the county file since No. 01. This is the issue's lead line. The full item is in the printed issue.",
+   "s": "Weekly Docket No. 02, week of October 5, 2026",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": true
+  },
+  {
+   "id": "d01-01",
+   "n": 1,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Lead line, week of Sep 28",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-09-28",
+   "t": "Hotel at 8630 Duncan Avenue",
+   "b": "A hotel at 8630 Duncan Avenue in McCandless sold for $19,005,000, the largest sale recorded in the six towns since August 1. This is the issue's lead line. The full item is in the printed issue.",
+   "s": "Weekly Docket No. 01, week of September 28, 2026",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": true
+  }
+ ],
+ "permits": {
+  "asOf": "September 2026",
+  "url": "https://northhillsbrief.com/hvac-permit-cost",
+  "rows": [
+   {
+    "town": "Franklin Park",
+    "name": "Franklin Park Borough",
+    "replace": "$20.40 to $32.40, by the equipment's HP or kW",
+    "add": "$20.40 to $32.40, by the equipment's HP or kW",
+    "watch": "Priced inside the electrical permit table, not a mechanical line.",
+    "detail": [
+     "Fractional up to 1: $20.40",
+     "1 to 3: $22.80",
+     "4 to 7: $32.40"
+    ],
+    "src": "Franklin Park Borough Resolution 1405-2025"
+   },
+   {
+    "town": "McCandless",
+    "name": "Town of McCandless",
+    "replace": "No mechanical line in the schedule",
+    "add": "No mechanical line in the schedule",
+    "watch": "The schedule prints no mechanical or electrical line. Call before you quote.",
+    "detail": [
+     "That is not the same as no permit. Call the town before you price a job."
+    ],
+    "src": "Town of McCandless Resolution 2025-32, adopted December 15, 2025"
+   },
+   {
+    "town": "Ohio Township",
+    "name": "Ohio Township",
+    "replace": "No mechanical line in the schedule",
+    "add": "No mechanical line in the schedule",
+    "watch": "Re-inspection is $100 per return visit.",
+    "detail": [
+     "The one HVAC-relevant number the schedule prints is the re-inspection fee: $100 for each return visit."
+    ],
+    "src": "Ohio Township Schedule of Fees"
+   },
+   {
+    "town": "Ross",
+    "name": "Ross Township",
+    "replace": "$75, plus $4.50 state fee",
+    "add": "$75, plus a $50 zoning fee, the $4.50 state fee and a plot plan",
+    "watch": "An add-on outdoor unit needs a plot plan; a swap does not.",
+    "detail": [
+     "Replacement furnace: $75",
+     "Replacement A/C only: $75",
+     "New (add-on) A/C or heat pump: $75, with a plot plan",
+     "New furnace: $100",
+     "New furnace and new A/C together: $150",
+     "Pennsylvania UCC fee: $4.50"
+    ],
+    "src": "Ross Township 2026 Fee Schedule"
+   },
+   {
+    "town": "Shaler",
+    "name": "Shaler Township",
+    "replace": "None unless the work changes the original design",
+    "add": "$120, plus $7 per $1,000 of cost, plus $4.50 state fee",
+    "watch": "Contractors register every year, $40.",
+    "detail": [
+     "Building permit: $120, plus $7 per $1,000 of cost",
+     "Labor and Industry (state) fee: $4.50",
+     "Contractor registration: $40 a year, expiring December 31"
+    ],
+    "src": "Shaler Township Resolution 17-2026, effective July 1, 2026"
+   },
+   {
+    "town": "West View",
+    "name": "West View Borough",
+    "replace": "No permit, per the Borough",
+    "add": "Where a permit is pulled: $45 for the first $1,000 of cost, $15 each $1,000 after, $125 minimum, plus a 20% borough fee",
+    "watch": "The Borough's statement and its permit report don't line up yet. Read both on the full page.",
+    "detail": [
+     "The Borough Manager wrote on September 17, 2026: \"We have not required a permit for a new HVAC system in a residential home.\"",
+     "The Borough's permit report also shows an HVAC permit issued July 20, 2026 for a new furnace and A/C install. The Brief has asked the Borough which jobs it permits."
+    ],
+    "src": "Borough Manager's email of September 17, 2026 · West View Borough agreement with Code.sys, Exhibit A, executed January 2024"
+   }
+  ]
+ }
+}
