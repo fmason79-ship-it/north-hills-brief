@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "towns": [
   "Franklin Park",
   "McCandless",
@@ -17,6 +17,12 @@
   "Food and drink"
  ],
  "issues": [
+  {
+   "n": 8,
+   "week": "2026-11-16",
+   "lead": "Ross's draft budget, with a proposed half-mill tax increase, goes to commissioners Monday, and the township's schedule calls for adopting it Dec 7.",
+   "pdf": "https://northhillsbrief.com/issues/weekly-docket-008.pdf"
+  },
   {
    "n": 7,
    "week": "2026-11-09",
@@ -61,6 +67,253 @@
   }
  ],
  "items": [
+  {
+   "id": "d08-01",
+   "n": 8,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Scheduled",
+   "topic": "Budgets and fees",
+   "g": "scheduled",
+   "d": "2026-11-16",
+   "t": "2027 budget at the business meeting, Mon Nov 16",
+   "b": "The draft on Monday's agenda carries the same general fund, $30,187,816, and the same tax increase, from 4 to 4.5 mills, as the one commissioners saw Nov 4. The township's budget timetable sets Nov 16 for a public hearing and Dec 7 for adoption by ordinance.",
+   "s": "Agenda and draft 2027 budget, Nov 16 business meeting packet",
+   "open": true,
+   "th": "ross-2027-budget",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-02",
+   "n": 8,
+   "towns": [
+    "Shaler"
+   ],
+   "kick": "On the agenda",
+   "topic": "Budgets and fees",
+   "g": "agenda",
+   "d": "2026-11-10",
+   "t": "Tax levy and budget ordinances, Nov 10",
+   "b": "Commissioners had Ordinance 2000, the tax levy, and Ordinance 2001, budget appropriations, up for introduction. The agenda gives no figures; the outcome prints when the minutes post.",
+   "s": "Agenda, Nov 10 regular meeting",
+   "open": true,
+   "th": "shaler-boc-nov10",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-03",
+   "n": 8,
+   "towns": [
+    "West View"
+   ],
+   "kick": "On the agenda",
+   "topic": "Budgets and fees",
+   "g": "agenda",
+   "d": "2026-11-11",
+   "t": "EMS fee presentation, Nov 11",
+   "b": "Ross/West View EMSA was on the agenda to present a proposed increase in EMS fees for 2027. Council also had a $21,058.84 payment to Youngblood Paving for the 2026 paving program and a $25,160.75 Sewer Authority payment to A. Merante Contracting for the 2025 storm sewer project.",
+   "s": "Agenda, Nov 11 regular meeting",
+   "open": true,
+   "th": "westview-council-nov11",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-04",
+   "n": 8,
+   "towns": [
+    "Franklin Park"
+   ],
+   "kick": "Scheduled",
+   "topic": "Planning and zoning",
+   "g": "scheduled",
+   "d": "2026-11-17",
+   "t": "Planning Commission, Tue Nov 17",
+   "b": "The commission is scheduled to take up DeNoon Lumber Company's application to log 2633 Weinman Rd and a second parcel in the R-1 district, an early review of a townhouse development on Nicholson Rd in the R-2 Transitional Overlay District, and Ordinance No. 699-2026, a proposed zoning amendment on solar panels and wireless telecommunications.",
+   "s": "Agenda, Nov 17 Planning Commission",
+   "open": true,
+   "th": "fp-pc-nov17",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-05",
+   "n": 8,
+   "towns": [
+    "West View"
+   ],
+   "kick": "Recorded Nov 2",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-11-02",
+   "t": "Retail building at 332 Center Ave",
+   "b": "The county lists it as a small detached retail building on a 10,063 sq ft lot. It sold for $180,000, and the sale is dated Jul 13.",
+   "s": "County deed, recorded Nov 2",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-06",
+   "n": 8,
+   "towns": [],
+   "kick": "Note",
+   "topic": "Property that changed hands",
+   "g": "note",
+   "d": "2026-11-16",
+   "t": "Deeds recorded Nov 2 through Nov 6",
+   "b": "It's the only business property among the 45 deeds recorded in the six towns Nov 2 through Nov 6 that the county has posted so far.",
+   "s": "County deeds, in the file as updated Nov 15",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": [
+    "d08-05"
+   ],
+   "wk": false
+  },
+  {
+   "id": "d08-07",
+   "n": 8,
+   "towns": [
+    "Ohio Township"
+   ],
+   "kick": "Decided",
+   "topic": "School boards",
+   "g": "decided",
+   "d": "2026-11-09",
+   "t": "Masonry repairs approved, Nov 9",
+   "b": "Approved, per the district's board notes: Allegheny Restoration, Inc. to do exterior masonry repairs and caulking at Avonworth Elementary School for up to $19,400, and October general fund bills of $1,041,585.15.",
+   "s": "Board notes, Nov 9 regular meeting",
+   "open": false,
+   "th": null,
+   "tl": "Avonworth SD · Ohio Township",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-08",
+   "n": 8,
+   "towns": [],
+   "kick": "Note",
+   "topic": "School boards",
+   "g": "note",
+   "d": "2026-11-16",
+   "t": "Other districts this week",
+   "b": "Shaler Area's Nov 11 committee agenda lists a Centegix contract for 2026 to 2032 and a Varonis subscription agreement, with no amounts shown. North Allegheny and North Hills posted no new files.",
+   "s": "District board sites, collected Nov 12",
+   "open": false,
+   "th": null,
+   "tl": "School districts",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-09",
+   "n": 8,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Scheduled",
+   "topic": "Councils and boards",
+   "g": "scheduled",
+   "d": "2026-11-16",
+   "t": "Perry Highway lighting grant, Mon Nov 16",
+   "b": "Commissioners are scheduled to vote on Resolution 2536, asking the state's Commonwealth Financing Authority for a $288,622.50 grant for the second phase of the Perry Highway lighting project. Also on the agenda is Ordinance 2572, which would ban parking on the south side of Winter Ave.",
+   "s": "Agenda packet, Nov 16 business meeting",
+   "open": true,
+   "th": "ross-perry-lighting-grant",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-10",
+   "n": 8,
+   "towns": [
+    "Shaler"
+   ],
+   "kick": "Draft minutes",
+   "topic": "Councils and boards",
+   "g": "draft",
+   "d": "2026-10-13",
+   "t": "Board of Commissioners, Oct 13",
+   "b": "Draft minutes show commissioners approved Duquesne Light's site development at 1899 Duquesne St, a lot line revision at 120 Heim Ct for DR Horton and Seel Fields Development, and a property tax sharing agreement with Millvale for the Mt. Alvernia property. A settlement with KLH Engineers over the Crawford bathhouse bid passed 6 to 1.",
+   "s": "Minutes collected Nov 13, up for approval Nov 10; approval not yet on record",
+   "open": false,
+   "th": "shaler-zhb-duquesne-light",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-11",
+   "n": 8,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Draft minutes",
+   "topic": "Councils and boards",
+   "g": "draft",
+   "d": "2026-10-12",
+   "t": "Town Council, Oct 12",
+   "b": "Draft minutes show council voted 6 to 0 for Resolution 2026-18, which amends the Northland Public Library Authority's articles to extend its term by 50 years, to March 7, 2077. It had been set to expire March 6, 2027.",
+   "s": "Minutes collected Nov 13; approval not yet on record",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-12",
+   "n": 8,
+   "towns": [
+    "Franklin Park",
+    "McCandless",
+    "Ohio Township",
+    "Ross",
+    "West View"
+   ],
+   "kick": "Note",
+   "topic": "Councils and boards",
+   "g": "note",
+   "d": "2026-11-16",
+   "t": "Minutes not posted yet",
+   "b": "Franklin Park's Nov 18 council agenda, covered here last week, hasn't changed since Nov 3. Minutes haven't posted yet for Ross's Nov 4, Ohio Township's Nov 2, McCandless's Oct 26 and Nov 9 or West View's Oct 14 meetings.",
+   "s": "Town websites, collected Nov 13",
+   "open": false,
+   "th": "fp-public-works",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d08-13",
+   "n": 8,
+   "towns": [],
+   "kick": "Note",
+   "topic": "Food and drink",
+   "g": "note",
+   "d": "2026-11-16",
+   "t": "Liquor licenses and food permits",
+   "b": "The PLCB showed no new license applications or transfers, and six licenses remain in safekeeping. No new county food permit could be placed in the six towns this week.",
+   "s": "PLCB filings and county food permits, both checked Nov 13",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": null,
+   "wk": false
+  },
   {
    "id": "d07-01",
    "n": 7,
