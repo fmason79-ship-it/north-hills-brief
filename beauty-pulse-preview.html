@@ -100,6 +100,9 @@
   .issue-foot .next{ font-style:italic; color:var(--muted); }
   .preview-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top:22px; }
   .preview-note{ font-size:0.9rem; color:var(--ink-soft); max-width:60ch; margin-top:14px; }
+  /* Phones: let the issue's columns shrink to the screen so the tables don't push the page sideways. */
+  .issue-cols > div{ min-width:0; }
+  @media (max-width:560px){ .issue table{ font-size:0.8rem; } .issue td, .issue th{ padding-right:8px; } .issue td.n{ white-space:normal; } .issue th{ letter-spacing:0.04em; } }
 </style>
 </head>
 <body>
@@ -247,7 +250,7 @@
     <div class="subscribe-box">
       <div>
         <span class="eyebrow" style="color:var(--inverse-accent);">Beauty Pulse</span>
-        <h2>Get the next issue before your competitor does.</h2>
+        <h2>Get Beauty Pulse every two weeks.</h2>
         <p>Every two weeks, by email, one page. Leave your email and Fred will send you the current issue and set you up.</p>
         <p style="font-size:0.9rem;">Prefer to talk? Call (440) 595-4133 or write fred@northhillsbrief.com.</p>
       </div>

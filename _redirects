@@ -35,3 +35,8 @@
 /desk-parkway    /let-desk-go.html   200
 /desk-rosedale   /let-desk-go.html   200
 /desk-abc        /let-desk-go.html   200
+
+# Nav names typed as addresses (15 Nov 2026). These are sections of the homepage.
+/about       /#about      302
+/method      /#method     302
+/subscribe   /#subscribe  302
