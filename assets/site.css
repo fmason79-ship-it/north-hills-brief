@@ -630,3 +630,16 @@
   section.wk.wrap{ padding-top:52px; padding-bottom:68px; }
   @media (max-width:860px){ section.wk.wrap{ padding-top:28px; padding-bottom:44px; } }
   section.hero.wrap + section.wrap{ padding-top:36px; }
+
+  /* ============ FOOTER FIX (Nov 16 2026) ============
+     The footer lost its side padding the same way the sections did, so on a
+     phone it sat against the left edge of the screen. The dots between links
+     are dropped: when the row wrapped they were left hanging at line ends. */
+  footer.site.wrap{ padding:30px 28px 44px; align-items:flex-start; }
+  .footer-links{ gap:8px 22px; }
+  .footer-links .sep{ display:none; }
+  @media (max-width:760px){
+    footer.site.wrap{ flex-direction:column; gap:14px; padding-top:26px; }
+    .footer-links{ gap:10px 20px; }
+  }
+  @media (max-width:820px){ .subscribe-box{ gap:20px; } .subscribe-box p{ margin-bottom:0; } }
