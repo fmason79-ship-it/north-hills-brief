@@ -488,3 +488,145 @@
   }
   .also-body a{ color:var(--green); font-family:"Lora", serif; font-weight:700; text-decoration:none; }
   .also-body a:hover{ text-decoration:underline; }
+
+  /* ============ PLAIN LABELS (Nov 15 2026) ============
+     Navigation, buttons, form labels and the footer are set in the body serif
+     in ordinary case. Space Mono stays for the record excerpts on the product
+     pages, where it stands for the typed document. */
+  nav.links a:not(.btn-nav-cta), .btn-nav-cta, .btn, .detail-link, .back-link,
+  .subscribe-form label, .subscribe-form button, .skip-link, footer.site{
+    font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+    text-transform:none; letter-spacing:0;
+  }
+  nav.links a:not(.btn-nav-cta){ font-size:0.98rem; }
+  .btn-nav-cta{ font-size:0.95rem; font-weight:600; }
+  .btn{ font-size:1rem; font-weight:600; line-height:1.3; padding:12px 20px; }
+  .detail-link, .back-link{ font-size:0.95rem; }
+  .subscribe-form label{ font-size:0.9rem; }
+  .subscribe-form button{ font-size:0.98rem; font-weight:600; }
+  footer.site{ font-size:0.88rem; }
+
+  /* ============ HOME: THIS WEEK (Nov 15 2026) ============ */
+  .wk.wrap{ padding-top:52px; padding-bottom:68px; }
+  .wk-grid{ display:grid; grid-template-columns:minmax(0,1.75fr) minmax(0,1fr); gap:60px; align-items:start; }
+  .wk-issue{ margin:0 0 18px; font-size:1rem; color:var(--ink-soft); }
+  .wk-issue a{ font-family:"Lora", Georgia, serif; font-weight:700; color:var(--green); text-decoration:none; margin-right:8px; }
+  .wk-issue a:hover{ text-decoration:underline; }
+  .wk-lead h1{
+    font-size:clamp(1.9rem, 3.5vw, 2.85rem); line-height:1.14; letter-spacing:-0.022em;
+    text-wrap:pretty; margin-bottom:22px;
+  }
+  .wk-source{ margin:0 0 20px; font-size:0.98rem; line-height:1.5; color:var(--ink-soft); max-width:58ch; }
+  .wk-source strong, .wk-meta strong, .rec-label strong{ color:var(--red); font-weight:600; }
+  .wk-links{ margin:0; display:flex; flex-wrap:wrap; gap:8px 26px; font-size:1.02rem; }
+  .wk-links a{ color:var(--green); font-weight:600; text-underline-offset:3px; }
+
+  .wk-join{ border-left:2px solid var(--green); padding:2px 0 2px 28px; }
+  .wk-what{ margin:0 0 22px; font-size:1.08rem; line-height:1.5; }
+  .join-form{ display:flex; flex-direction:column; gap:8px; }
+  .join-form .hp{ display:none; }
+  .join-form label{ font-weight:600; font-size:1rem; }
+  .join-form .row{ display:flex; flex-wrap:wrap; gap:10px; }
+  .join-form input[type="email"]{
+    flex:1 1 200px; min-width:0; background:var(--paper-raised); color:var(--ink);
+    border:1px solid color-mix(in srgb, var(--ink) 35%, var(--rule)); border-radius:8px;
+    padding:12px 14px; font-family:"Source Serif 4", Georgia, serif; font-size:1rem;
+  }
+  .join-form button{
+    flex:0 0 auto; background:var(--green); color:var(--paper); border:1px solid var(--green);
+    border-radius:8px; padding:12px 18px; cursor:pointer;
+    font-family:"Source Serif 4", Georgia, serif; font-size:1rem; font-weight:600;
+  }
+  .join-form button:hover{ background:var(--green-strong); border-color:var(--green-strong); }
+  .join-note{ margin:0; font-size:0.9rem; color:var(--ink-soft); }
+  .wk-towns{ margin:22px 0 0; font-size:0.95rem; line-height:1.5; color:var(--ink-soft); }
+  .wk-towns strong{ color:var(--ink); font-weight:600; }
+
+  .wk-more{ margin-top:52px; padding-top:22px; border-top:1px solid var(--rule); }
+  .wk-more h2{ font-size:1.15rem; margin-bottom:14px; }
+  .wk-list{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:0 64px; }
+  .wk-list li{ padding:13px 0; border-bottom:1px solid var(--rule); display:flex; flex-direction:column; gap:2px; }
+  .wk-meta{ font-size:0.9rem; color:var(--ink-soft); }
+  .wk-title{ font-family:"Lora", Georgia, serif; font-weight:600; font-size:1.08rem; line-height:1.3; }
+
+  @media (max-width:860px){
+    .wk.wrap{ padding-top:28px; padding-bottom:44px; }
+    .wk-grid{ grid-template-columns:1fr; gap:34px; }
+    .wk-join{ border-left:none; border-top:2px solid var(--green); padding:22px 0 0; }
+    .wk-more{ margin-top:36px; }
+    .wk-list{ grid-template-columns:1fr; }
+  }
+
+  /* ============ HOME: PLAIN SECTIONS (Nov 15 2026) ============ */
+  .plain-head{ margin-bottom:26px; max-width:60ch; }
+  .plain-head h2{ font-size:clamp(1.45rem, 2.1vw, 1.75rem); line-height:1.2; letter-spacing:-0.012em; margin-bottom:8px; }
+  .plain-head p{ margin:0; color:var(--ink-soft); }
+  #about h2{ font-size:clamp(1.45rem, 2.1vw, 1.75rem); line-height:1.2; letter-spacing:-0.012em; }
+  .about-who{ margin:4px 0 0; font-size:0.95rem; color:var(--ink-soft); }
+  #about .prose-col p:first-child{ margin-top:0; }
+  #about .prose-col a{ color:var(--green); }
+
+  .pub-list{ border-top:2px solid var(--ink); }
+  .pub{
+    display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,0.7fr) minmax(0,0.9fr);
+    gap:14px 40px; align-items:start; padding:24px 0; border-bottom:1px solid var(--rule);
+  }
+  .pub-main h3{ font-size:1.32rem; line-height:1.25; margin-bottom:6px; }
+  .pub-main h3 a{ color:inherit; text-decoration:none; }
+  .pub-main h3 a:hover{ color:var(--green); }
+  .pub-main p{ margin:0; color:var(--ink-soft); font-size:0.98rem; line-height:1.55; }
+  .pub-terms{ display:flex; flex-direction:column; gap:2px; padding-top:2px; }
+  .pub-price{ font-family:"Lora", Georgia, serif; font-weight:700; font-size:1.2rem; line-height:1.3; }
+  .pub-when{ font-size:0.92rem; color:var(--ink-soft); }
+  .pub-act{ display:flex; flex-direction:column; align-items:flex-start; gap:10px; }
+  .pub-more{ font-size:0.95rem; color:var(--green); text-underline-offset:3px; }
+  .also-line{ margin:26px 0 0; font-size:0.98rem; color:var(--ink-soft); max-width:72ch; }
+  .also-line a{ color:var(--green); font-family:"Lora", Georgia, serif; font-weight:700; text-decoration:none; }
+  .also-line a:hover{ text-decoration:underline; }
+  @media (max-width:860px){
+    .pub{ grid-template-columns:1fr; gap:12px; padding:22px 0; }
+    .pub-terms{ flex-direction:row; flex-wrap:wrap; align-items:baseline; gap:4px 12px; }
+  }
+
+  .rec-grid{ display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:52px; align-items:start; }
+  .rec{
+    background:var(--paper-raised); border:1px solid var(--rule); border-left:4px solid var(--green);
+    border-radius:4px; padding:24px 26px 20px; box-shadow:var(--shadow);
+  }
+  .rec-label{ margin:0 0 8px; font-size:0.92rem; color:var(--ink-soft); }
+  .rec-label strong{ margin-right:8px; }
+  .rec h3{ font-size:1.28rem; line-height:1.25; margin-bottom:10px; }
+  .rec-body{ margin:0 0 14px; font-size:1rem; line-height:1.55; }
+  .rec-src{ margin:0; padding-top:12px; border-top:1px solid var(--rule); font-size:0.9rem; color:var(--ink-soft); }
+  .rec-notes{ margin:0; display:flex; flex-direction:column; gap:16px; }
+  .rec-notes dt, .read-list dt{ font-family:"Lora", Georgia, serif; font-weight:700; font-size:1.02rem; line-height:1.3; margin-bottom:3px; }
+  .rec-notes dd, .read-list dd{ margin:0; color:var(--ink-soft); font-size:0.96rem; line-height:1.55; }
+  .read-head{ font-size:1.2rem; margin:52px 0 16px; }
+  .read-list{ margin:0; display:grid; grid-template-columns:1fr 1fr; gap:22px 56px; }
+  .standards{ margin-top:48px; padding:22px 0 0; border-top:2px solid var(--ink); max-width:72ch; }
+  .standards h3{ font-size:1.2rem; margin-bottom:10px; }
+  .standards ul{ margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px; }
+  .standards li{ line-height:1.55; }
+  .standards a{ color:var(--green); }
+  @media (max-width:860px){
+    .rec-grid{ grid-template-columns:1fr; gap:28px; }
+    .read-list{ grid-template-columns:1fr; gap:18px; }
+    .read-head{ margin-top:40px; }
+  }
+
+  /* ============ SECTION SPACING FIX (Nov 15 2026) ============
+     .wrap and section each set the padding shorthand, so a section.wrap lost
+     its top and bottom padding and a hero or subscribe section lost its side
+     padding. Headings sat on the rule above them, and the hero's left edge
+     did not line up with the sections under it. Both are set here together. */
+  section.wrap{ padding:64px 28px; }
+  section.hero.wrap{ padding:64px 28px 56px; }
+  section.subscribe.wrap{ padding:64px 28px 0; }
+  @media (max-width:760px){
+    section.wrap{ padding:44px 28px; }
+    section.hero.wrap{ padding:32px 28px 36px; }
+    section.subscribe.wrap{ padding:44px 28px 0; }
+  }
+  section.wk.wrap{ padding-top:52px; padding-bottom:68px; }
+  @media (max-width:860px){ section.wk.wrap{ padding-top:28px; padding-bottom:44px; } }
+  section.hero.wrap + section.wrap{ padding-top:36px; }

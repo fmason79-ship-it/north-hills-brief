@@ -21,7 +21,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@northhillsbrief">
-<link rel="stylesheet" href="/assets/site.css?v=20261001a">
+<link rel="stylesheet" href="/assets/site.css?v=20261115a">
 </head>
 <body>
 <a class="skip-link" href="#top">Skip to content</a>
@@ -38,10 +38,10 @@
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <nav class="links" id="navLinks">
-      <a href="#method">Method</a>
-      <a href="#products">Products</a>
-      <a href="#coverage">Coverage</a>
+      <a href="#top">This week</a>
       <a href="#about">About</a>
+      <a href="#products">What we publish</a>
+      <a href="#method">How it's sourced</a>
       <a class="btn-nav-cta" href="#subscribe">Subscribe</a>
     </nav>
   </div>
@@ -49,187 +49,167 @@
 
 <main id="top">
 
-  <section class="hero wrap" style="border-bottom:none; padding-bottom:0;">
-    <div class="docket-line">
-      <span>Vol. 1 · Est. 2026</span>
-      <span><strong>Sourced and dated</strong> &middot; every figure</span>
-      <span>North Hills, Allegheny County, PA</span>
+  <!-- THIS WEEK. The text below is the newest issue as of the last site update.
+       The script at the foot of the page replaces it from /app/data.json on
+       load, so it follows the Sunday Docket build without an edit here. -->
+  <section class="wk wrap" aria-label="This week's Weekly Docket">
+    <div class="wk-grid">
+      <div class="wk-lead">
+        <p class="wk-issue"><a href="weekly-docket.html">The Weekly Docket</a> <span id="wkIssue">No. 08, week of November 16, 2026</span></p>
+        <h1 id="wkLead">Ross's draft budget, with a proposed half-mill tax increase, goes to commissioners Monday, and the township's schedule calls for adopting it Dec 7.</h1>
+        <p class="wk-source" id="wkSource"><strong>Scheduled</strong> &middot; Ross &middot; From the agenda and draft 2027 budget, Nov 16 business meeting packet</p>
+        <p class="wk-links"><a id="wkPdf" href="issues/weekly-docket-008.pdf">Read No. 08</a><a href="weekly-docket.html#past-issues">Read past issues</a></p>
+      </div>
+
+      <aside class="wk-join" id="coverage">
+        <p class="wk-what">One person reads the deeds, licenses, fee schedules and meeting minutes for six North Hills towns and tells small-business owners where they stand.</p>
+        <form class="join-form" name="docket-signup" data-buttondown="NorthHillsBrief" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="docket-signup">
+          <input type="hidden" name="source" value="Homepage top">
+          <p class="hp" hidden><label>Leave this empty: <input name="bot-field"></label></p>
+          <label for="email-top">Get the Weekly Docket by email, free</label>
+          <div class="row">
+            <input id="email-top" type="email" name="email" placeholder="you@yourbusiness.com" required>
+            <button type="submit">Send me the Docket</button>
+          </div>
+          <p class="join-note">One email every Monday. Unsubscribe any time.</p>
+        </form>
+        <p class="wk-towns"><strong>The six towns:</strong> Franklin Park, McCandless, Ohio Township, Ross, Shaler and West View. Each is counted on its own.</p>
+      </aside>
     </div>
-    <h1>The local numbers behind your business, <em>read from the original record.</em></h1>
-    <p class="hero-sub">What homes sold for in each town. What the salon down the road charges. What an HVAC permit costs in Ross, and whether West View asks for one at all. The North Hills Brief reads the deeds, licenses, fee schedules and meeting minutes for West View, Ross, Shaler, Ohio Township, McCandless and Franklin Park, and tells small-business owners where they stand. Every figure is sourced and dated. It is not news, and it is not advice.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-primary" href="weekly-docket.html#signup">Get the free weekly</a>
-      <a class="btn btn-ghost" href="#products">Subscribe to a Brief</a>
-      <a class="btn btn-ghost" href="#method">See how it's sourced</a>
-      <a class="btn btn-ghost" href="weekly-docket.html">Read this week's Docket</a>
-    </div>
-    <div class="stat-row">
-      <div class="stat"><span class="num">6</span><span class="label">Municipalities covered</span></div>
-      <div class="stat"><span class="num">0</span><span class="label">Press releases used as a source</span></div>
-      <div class="stat"><span class="num">4</span><span class="label">Products, weekly to quarterly</span></div>
+
+    <div class="wk-more">
+      <h2 id="wkMoreHead">Also in No. 08</h2>
+      <ol class="wk-list" id="wkList">
+        <li><span class="wk-meta"><strong>On the agenda</strong> &middot; Shaler &middot; Nov 10</span><span class="wk-title">Tax levy and budget ordinances, Nov 10</span></li>
+        <li><span class="wk-meta"><strong>On the agenda</strong> &middot; West View &middot; Nov 11</span><span class="wk-title">EMS fee presentation, Nov 11</span></li>
+        <li><span class="wk-meta"><strong>Scheduled</strong> &middot; Franklin Park &middot; Nov 17</span><span class="wk-title">Planning Commission, Tue Nov 17</span></li>
+        <li><span class="wk-meta"><strong>Recorded Nov 2</strong> &middot; West View</span><span class="wk-title">Retail building at 332 Center Ave</span></li>
+      </ol>
     </div>
   </section>
 
-  <section id="coverage" class="wrap">
-    <div class="section-head">
-      <h2>The beat: six municipalities, each counted on its own.</h2>
-      <p class="section-note">If it's on the record in a North Hills council chamber, a county office or a state licensing board, it's in scope.</p>
-    </div>
-    <div class="chip-grid">
-      <div class="chip"><span class="tag">Borough</span><span class="name">Franklin Park</span></div>
-      <div class="chip"><span class="tag">Town</span><span class="name">McCandless</span></div>
-      <div class="chip"><span class="tag">Township</span><span class="name">Ohio</span></div>
-      <div class="chip"><span class="tag">Township</span><span class="name">Ross</span></div>
-      <div class="chip"><span class="tag">Township</span><span class="name">Shaler</span></div>
-      <div class="chip"><span class="tag">Borough</span><span class="name">West View</span></div>
-    </div>
-  </section>
-
-  <section id="method" class="wrap">
-    <div class="section-head">
-      <h2>Primary sources. Not news search.</h2>
-      <p class="section-note">Every figure carries its source, its place and its date. If it can't be cited, it doesn't run.</p>
-    </div>
-    <div class="method-grid">
+  <section id="about" class="wrap">
+    <div class="about-grid">
       <div>
-        <div class="method-list">
-          <div class="method-item">
-            <span class="idx mono">01</span>
-            <div><h3>County deeds and house cards</h3><p>Every recorded sale in the six towns, joined to the county's own record of the house: year built, heating, central air. A deed the county has already marked as a family transfer stays out.</p></div>
-          </div>
-          <div class="method-item">
-            <span class="idx mono">02</span>
-            <div><h3>Township fee schedules</h3><p>Each town's adopted permit fees, cited by name and date. Where a town doesn't require the permit, we say so, and we say who told us.</p></div>
-          </div>
-          <div class="method-item">
-            <span class="idx mono">03</span>
-            <div><h3>State licenses</h3><p>Salon licenses from the State Board of Cosmetology and liquor license filings from the PLCB, both checked every Friday against a running registry.</p></div>
-          </div>
-          <div class="method-item">
-            <span class="idx mono">04</span>
-            <div><h3>Shop menus</h3><p>What salons actually post on their own price lists, read shop by shop, with the read date on every price.</p></div>
-          </div>
-          <div class="method-item">
-            <span class="idx mono">05</span>
-            <div><h3>Minutes, meeting packets and check registers</h3><p>Read for what was filed and what was decided. An agenda tells us what is scheduled, and we print it as scheduled. Only the minutes tell us what was decided. The check registers inside the packets show where each town's money went.</p></div>
-          </div>
-          <div class="method-item">
-            <span class="idx mono">06</span>
-            <div><h3>Sheriff and estate filings</h3><p>The county sheriff sale list and Register of Wills filings, reported by property address. We don't print people's names.</p></div>
-          </div>
-        </div>
-        <p class="section-note" style="margin-top:18px;">And whatever else the record turns up. When a packet we already read holds something that matters to our readers, such as a resolution, a contract or a filing, it runs, with the document named and dated.</p>
+        <h2>Written by someone who lives here.</h2>
+        <p class="signature">Fred Mason</p>
+        <p class="about-who">West View, PA. Founder and sole reporter.</p>
+      </div>
+      <div class="prose-col">
+        <p>I live in West View and spend my working life in financial-services operations, the part of the job that's about reading records closely and making sure the numbers hold up. The North Hills Brief is that same discipline pointed at my own neighborhood.</p>
+        <p>Small businesses in the North Hills are easy to overlook. There's no dedicated local desk covering what happens in six different council chambers every month. I built this to close that gap, starting with the houses that change hands and the shops on the main streets, with more trades to follow.</p>
+        <p>It's a small operation by design: one person reading the primary source, every week, so you don't have to. If I got something wrong, or you want something read, write to me at <a href="mailto:hello@northhillsbrief.com">hello@northhillsbrief.com</a>.</p>
       </div>
     </div>
   </section>
 
   <section id="products" class="wrap">
-    <div class="section-head">
-      <h2>One free weekly. Two paid issues. One spotlight.</h2>
-      <p class="section-note">Built for owners who don't have an afternoon to read a planning packet themselves.</p>
+    <div class="plain-head">
+      <h2>What we publish</h2>
+      <p>One free weekly, two paid briefs and one quarterly spotlight.</p>
     </div>
-    <div class="product-grid">
+    <div class="pub-list">
 
-      <div class="product-card">
-        <div class="product-top"><span>Free &middot; Every week</span><span class="badge">Start here</span></div>
-        <h3><a href="weekly-docket.html">The Weekly Docket</a></h3>
-        <div class="product-cadence">Every week &middot; free by email</div>
-        <p class="desc">What was filed in the six towns this week: commercial property sales, restaurant openings, liquor licenses, zoning requests and council decisions.</p>
-        <ul>
-          <li>Commercial property sales, by address and price</li>
-          <li>Restaurant openings and liquor license filings</li>
-          <li>Zoning requests and what council decided</li>
-        </ul>
-        <div class="price-row"><span class="amt">Free</span><span class="per">every week</span></div>
-        <a class="btn btn-primary" href="weekly-docket.html#signup" style="text-align:center;">Sign me up</a>
-        <a class="detail-link" href="weekly-docket.html">See what's in an issue →</a>
+      <div class="pub">
+        <div class="pub-main">
+          <h3><a href="weekly-docket.html">The Weekly Docket</a></h3>
+          <p>What was filed in the six towns this week: commercial property sales, restaurant openings, liquor licenses, zoning requests and council decisions.</p>
+        </div>
+        <div class="pub-terms"><span class="pub-price">Free</span><span class="pub-when">Every Monday, by email</span></div>
+        <div class="pub-act">
+          <a class="btn btn-primary" href="weekly-docket.html#signup">Get the Docket</a>
+          <a class="pub-more" href="weekly-docket.html">See what's in an issue</a>
+        </div>
       </div>
 
-      <div class="product-card featured">
-        <div class="product-top"><span>No. 02 &middot; Property</span><span class="badge">Flagship</span></div>
-        <h3><a href="property-pulse.html">Property Pulse</a></h3>
-        <div class="product-cadence">Every month &middot; first Monday</div>
-        <p class="desc">The houses that sold last month in the six towns, how old they are, whether they have central air, and what the permit costs. For the trades that work on a house after it sells: heating and cooling, plumbing, roofing, electrical, movers and more.</p>
-        <ul>
-          <li>Sales and turnover, town by town</li>
-          <li>Older houses sold, all of them, by town and address</li>
-          <li>Permit cost in each of the six towns</li>
-          <li>The sheriff sale list, by address</li>
-        </ul>
-        <div class="price-row"><span class="amt">$29</span><span class="per">/ month</span></div>
-        <a class="btn btn-primary" href="https://buy.stripe.com/14AaEXc7QfAG9exf0173G00" data-stripe-slot="property-pulse-monthly" style="text-align:center;">Subscribe</a>
-        <a class="detail-link" href="property-pulse.html">See what's in an issue →</a>
+      <div class="pub">
+        <div class="pub-main">
+          <h3><a href="property-pulse.html">Property Pulse</a></h3>
+          <p>The houses that sold last month in the six towns, how old they are, whether they have central air, and what the permit costs. For the trades that work on a house after it sells.</p>
+        </div>
+        <div class="pub-terms"><span class="pub-price">$29 a month</span><span class="pub-when">First Monday of every month</span></div>
+        <div class="pub-act">
+          <a class="btn btn-primary" href="https://buy.stripe.com/14AaEXc7QfAG9exf0173G00" data-stripe-slot="property-pulse-monthly">Subscribe for $29 a month</a>
+          <a class="pub-more" href="property-pulse.html">See what's in an issue</a>
+        </div>
       </div>
 
-      <div class="product-card">
-        <div class="product-top"><span>No. 03 &middot; Beauty</span></div>
-        <h3><a href="beauty-pulse.html">Beauty Pulse</a></h3>
-        <div class="product-cadence">Every two weeks</div>
-        <p class="desc">What North Hills salons post for a cut and a color, who just got licensed, and what stylists earn. For owners of salons and suites.</p>
-        <ul>
-          <li>Posted cut and color prices, town by town</li>
-          <li>New salon licenses from the state board</li>
-          <li>Stylist wages, labeled with where they're measured</li>
-          <li>Being added: barbershops, nail studios, waxing and massage</li>
-        </ul>
-        <div class="price-row"><span class="amt">$15</span><span class="per">/ month</span></div>
-        <a class="btn btn-primary" href="https://buy.stripe.com/dRmbJ1efYgEKcqJdVX73G01" data-stripe-slot="beauty-pulse-monthly" style="text-align:center;">Subscribe</a>
-        <a class="detail-link" href="beauty-pulse-preview.html">See a full sample issue →</a>
+      <div class="pub">
+        <div class="pub-main">
+          <h3><a href="beauty-pulse.html">Beauty Pulse</a></h3>
+          <p>What North Hills salons post for a cut and a color, who just got licensed, and what stylists earn. For owners of salons and suites.</p>
+        </div>
+        <div class="pub-terms"><span class="pub-price">$15 a month</span><span class="pub-when">Every two weeks</span></div>
+        <div class="pub-act">
+          <a class="btn btn-primary" href="https://buy.stripe.com/dRmbJ1efYgEKcqJdVX73G01" data-stripe-slot="beauty-pulse-monthly">Subscribe for $15 a month</a>
+          <a class="pub-more" href="beauty-pulse-preview.html">Read a full sample issue</a>
+        </div>
       </div>
 
-      <div class="product-card">
-        <div class="product-top"><span>No. 04 &middot; Spotlight</span></div>
-        <h3><a href="beauty-shop-math.html">Beauty Shop Math</a></h3>
-        <div class="product-cadence">Quarterly · one shop per quarter</div>
-        <p class="desc">A single North Hills salon, one quarter, the real numbers behind the chairs, built as a piece the owner can hand to a customer, a landlord, or a lender.</p>
-        <ul>
-          <li>One shop, deep dive</li>
-          <li>Built to be shared, not just read</li>
-          <li>Limited to one spot per quarter</li>
-        </ul>
-        <div class="price-row"><span class="amt" style="font-size:1.25rem;">Custom quote</span><span class="per">per quarter</span></div>
-        <a class="btn btn-ghost" href="beauty-shop-math.html#subscribe" style="text-align:center;">Reserve your quarter</a>
-        <a class="detail-link" href="beauty-shop-math.html">See a sample & full details →</a>
+      <div class="pub">
+        <div class="pub-main">
+          <h3><a href="beauty-shop-math.html">Beauty Shop Math</a></h3>
+          <p>A single North Hills salon, one quarter, the real numbers behind the chairs, built as a piece the owner can hand to a customer, a landlord or a lender.</p>
+        </div>
+        <div class="pub-terms"><span class="pub-price">Custom quote</span><span class="pub-when">One shop per quarter</span></div>
+        <div class="pub-act">
+          <a class="btn btn-ghost" href="beauty-shop-math.html#subscribe">Reserve your quarter</a>
+          <a class="pub-more" href="beauty-shop-math.html">See a sample and full details</a>
+        </div>
       </div>
 
     </div>
+    <p class="also-line">Also from the Brief: <a href="https://desk.northhillsbrief.com">Let Desk</a>, public works before it is advertised, across Allegheny, Beaver, Butler, Lawrence, Washington and Westmoreland Counties, for the contractors who bid them.</p>
   </section>
 
-  <div class="wrap">
-    <div class="sources-bar">
-      <span>County deeds</span><span>House cards</span><span>Fee schedules</span><span>Salon licenses</span><span>PLCB filings</span><span>Health inspections</span><span>Shop menus</span><span>Minutes</span><span>Check registers</span><span>Sheriff list</span><span>Register of Wills</span>
+  <section id="method" class="wrap">
+    <div class="plain-head">
+      <h2>How a line gets into the Brief</h2>
+      <p>This is the first item in this week's Docket, with the rule behind each part of it.</p>
     </div>
-  </div>
 
-  <div class="wrap">
-    <div class="also-from">
-      <span class="also-label">Also from the Brief</span>
-      <span class="also-body"><a href="https://desk.northhillsbrief.com">Let Desk</a>: public works before it is advertised, across Allegheny, Beaver, Butler, Lawrence, Washington, and Westmoreland Counties, for the contractors who bid them. A living board, not a newsletter.</span>
+    <div class="rec-grid">
+      <article class="rec" aria-label="An item from this week's Docket">
+        <p class="rec-label"><strong id="recKick">Scheduled</strong> <span id="recWhere">Ross &middot; Nov 16</span></p>
+        <h3 id="recTitle">2027 budget at the business meeting, Mon Nov 16</h3>
+        <p class="rec-body" id="recBody">The draft on Monday's agenda carries the same general fund, $30,187,816, and the same tax increase, from 4 to 4.5 mills, as the one commissioners saw Nov 4. The township's budget timetable sets Nov 16 for a public hearing and Dec 7 for adoption by ordinance.</p>
+        <p class="rec-src">Source: <span id="recSrc">Agenda and draft 2027 budget, Nov 16 business meeting packet</span></p>
+      </article>
+      <dl class="rec-notes">
+        <div><dt>The label</dt><dd>It says what kind of record this is: scheduled, on the agenda, decided or recorded. An agenda prints as scheduled. Only the minutes print as decided.</dd></div>
+        <div><dt>The town and the date</dt><dd>Each town is counted on its own, and every item carries the date of the meeting or the filing.</dd></div>
+        <div><dt>The figures</dt><dd>Numbers are copied from the document itself, not from someone's account of it.</dd></div>
+        <div><dt>The source line</dt><dd>Every item names the document it came from. If it can't be cited, it doesn't run.</dd></div>
+      </dl>
     </div>
-  </div>
 
-  <section id="about" class="wrap">
-    <div class="about-grid">
-      <div>
-        <span class="eyebrow">Who's filing this</span>
-        <h2>Written by someone who lives here.</h2>
-        <p class="signature">Fred Mason</p>
-        <p class="about-tag">West View, PA · Founder & sole reporter</p>
-      </div>
-      <div class="prose-col">
-        <p>I live in West View and spend my working life in financial-services operations, the part of the job that's about reading records closely and making sure the numbers hold up. The North Hills Brief is that same discipline pointed at my own neighborhood.</p>
-        <p>Small businesses in the North Hills are easy to overlook. There's no dedicated local desk covering what happens in six different council chambers every month. I built this to close that gap, starting with the houses that change hands and the shops on the main streets, with more trades to follow.</p>
-        <p>It's a small operation by design: one person reading the primary source, every week, so you don't have to.</p>
-      </div>
+    <h3 class="read-head">What we read</h3>
+    <dl class="read-list">
+      <div><dt>County deeds and house cards</dt><dd>Every recorded sale in the six towns, joined to the county's own record of the house: year built, heating, central air. A deed the county has already marked as a family transfer stays out.</dd></div>
+      <div><dt>Township fee schedules</dt><dd>Each town's adopted permit fees, cited by name and date. Where a town doesn't require the permit, we say so, and we say who told us.</dd></div>
+      <div><dt>State licenses</dt><dd>Salon licenses from the State Board of Cosmetology and liquor license filings from the PLCB, both checked every Friday against a running registry.</dd></div>
+      <div><dt>Shop menus</dt><dd>What salons actually post on their own price lists, read shop by shop, with the read date on every price.</dd></div>
+      <div><dt>Minutes, meeting packets and check registers</dt><dd>Read for what was filed and what was decided. The check registers inside the packets show where each town's money went.</dd></div>
+      <div><dt>Sheriff and estate filings</dt><dd>The county sheriff sale list and Register of Wills filings, reported by property address.</dd></div>
+    </dl>
+
+    <div class="standards">
+      <h3>Our standards</h3>
+      <ul>
+        <li>Every figure carries its source, its place and its date.</li>
+        <li>We print addresses, businesses and public bodies. We don't print private people's names.</li>
+        <li>This is not news, and it is not advice.</li>
+        <li>When we get something wrong, we say what we printed, what is correct and why, with dates, on the <a href="corrections.html">Corrections page</a>.</li>
+      </ul>
     </div>
   </section>
 
   <section id="subscribe" class="subscribe wrap" style="border-bottom:none;">
     <div class="subscribe-box">
       <div>
-        <span class="eyebrow" style="color:var(--inverse-accent);">The Weekly Docket</span>
         <h2>Get the Weekly Docket, free.</h2>
-        <p>One email a week with what was filed in the six towns. Or subscribe to a paid issue above.</p>
+        <p>One email a week with what was filed in the six towns. Or subscribe to a paid brief above.</p>
       </div>
       <form class="subscribe-form" name="docket-signup" data-buttondown="NorthHillsBrief" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="docket-signup">
@@ -238,7 +218,7 @@
         <label for="email-input">Email address</label>
         <div class="row">
           <input id="email-input" type="email" name="email" placeholder="you@yourbusiness.com" required>
-          <button type="submit">Sign me up</button>
+          <button type="submit">Send me the Docket</button>
         </div>
         <p class="form-note">One email a week. Unsubscribe any time. Prefer to write directly? hello@northhillsbrief.com works too.</p>
       </form>
@@ -284,6 +264,64 @@
         });
       });
     }
+  })();
+</script>
+
+<script>
+  /* This week's Docket, read from the app's data file. If the file can't be
+     read, the text already in the page stays as it is. */
+  (function(){
+    var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    function byId(id){ return document.getElementById(id); }
+    function longDate(iso){ var p = iso.split('-'); return MONTHS[+p[1]-1] + ' ' + (+p[2]) + ', ' + p[0]; }
+    function shortDate(iso){ var p = iso.split('-'); return MONTHS[+p[1]-1].slice(0,3) + ' ' + (+p[2]); }
+    function pad(n){ return (n < 10 ? '0' : '') + n; }
+    function where(item){
+      var t = item.towns || [];
+      if (!t.length) return 'Six towns';
+      return t.length > 2 ? t.length + ' towns' : t.join(' and ');
+    }
+    function meta(el, item){
+      el.textContent = '';
+      var k = document.createElement('strong'); k.textContent = item.kick; el.appendChild(k);
+      var rest = ' · ' + where(item);
+      if (!/\d/.test(item.kick) && item.d) rest += ' · ' + shortDate(item.d);
+      el.appendChild(document.createTextNode(rest));
+    }
+    if (!window.fetch || !byId('wkLead')) return;
+    fetch('/app/data.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(data){
+      if (!data || !data.issues || !data.issues.length || !data.items) return;
+      var issue = data.issues[0];
+      var no = 'No. ' + pad(issue.n);
+      var items = data.items.filter(function(i){ return i.n === issue.n; });
+      if (!issue.lead || !items.length) return;
+      var first = items[0];
+      var more = items.slice(1).filter(function(i){ return i.g !== 'note'; }).slice(0, 4);
+
+      byId('wkIssue').textContent = no + ', week of ' + longDate(issue.week);
+      byId('wkLead').textContent = issue.lead;
+      var src = byId('wkSource'); meta(src, first);
+      src.appendChild(document.createTextNode(' · From: ' + first.s));
+      var pdf = byId('wkPdf'); pdf.textContent = 'Read ' + no;
+      pdf.setAttribute('href', 'issues/weekly-docket-' + ('00' + issue.n).slice(-3) + '.pdf');
+
+      if (more.length){
+        byId('wkMoreHead').textContent = 'Also in ' + no;
+        var list = byId('wkList'); list.textContent = '';
+        more.forEach(function(i){
+          var li = document.createElement('li');
+          var m = document.createElement('span'); m.className = 'wk-meta'; meta(m, i);
+          var t = document.createElement('span'); t.className = 'wk-title'; t.textContent = i.t;
+          li.appendChild(m); li.appendChild(t); list.appendChild(li);
+        });
+      }
+
+      byId('recKick').textContent = first.kick;
+      byId('recWhere').textContent = where(first) + (first.d ? ' · ' + shortDate(first.d) : '');
+      byId('recTitle').textContent = first.t;
+      byId('recBody').textContent = first.b;
+      byId('recSrc').textContent = first.s;
+    }).catch(function(){});
   })();
 </script>
 
