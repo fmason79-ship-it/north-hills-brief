@@ -1,5 +1,5 @@
 {
- "built": "2026-11-15",
+ "built": "2026-11-22",
  "towns": [
   "Franklin Park",
   "McCandless",
@@ -17,6 +17,12 @@
   "Food and drink"
  ],
  "issues": [
+  {
+   "n": 9,
+   "week": "2026-11-23",
+   "lead": "McCandless's town manager recommends raising the real estate tax for 2027 from 1.236 to at least 1.736 mills, and council has the rate on Monday's agenda.",
+   "pdf": "https://northhillsbrief.com/issues/weekly-docket-009.pdf"
+  },
   {
    "n": 8,
    "week": "2026-11-16",
@@ -67,6 +73,240 @@
   }
  ],
  "items": [
+  {
+   "id": "d09-01",
+   "n": 9,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Scheduled",
+   "topic": "Budgets and fees",
+   "g": "scheduled",
+   "d": "2026-11-23",
+   "t": "Tax rate and budget hearing, Mon Nov 23",
+   "b": "The budget presented Nov 9 left the rate unchanged. The manager's Nov 18 memo says 1.736 mills would bring in about $1.4 million more and cost a home at the median assessed value of $193,000 another $96.50 a year, and it proposes capital cuts, the largest $725,000 for creating Pontiac Park. Council is scheduled to discuss and possibly act on the rate, hold the 2027 budget hearing and vote on two $1,000,000 state grant requests, for a fire ladder truck and Wall Park. A millage hearing is set for Dec 2 and budget adoption for Dec 14.",
+   "s": "Agenda, manager's memo, draft budget ordinance and resolutions, Nov 23 Council packet",
+   "open": true,
+   "th": "mccandless-2027-budget",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-02",
+   "n": 9,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "On the agenda",
+   "topic": "Planning and zoning",
+   "g": "agenda",
+   "d": "2026-11-19",
+   "t": "Planning Commission, Nov 19",
+   "b": "The agenda carried Area Connections, LLC's requests to turn the former Club Julian athletic building at 101 Corbett Ct into a Primrose School day care, with a playground on the north parking lot, and a minor revision to RWC Ross Real Estate's approved site plan at 5510 Babcock Blvd, where the township engineer's review says stop-work authority was issued to the applicant the week of Nov 2. It also carried a split of the Sisters of the Holy Family of Nazareth's 18.99 acres at 265-301 Nazareth Way into three lots, and a repair shop at 1047 Perry Hwy. Outcomes print when the minutes post.",
+   "s": "Agenda packet, Nov 19 Planning Commission",
+   "open": true,
+   "th": "ross-pc-nov19",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-03",
+   "n": 9,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Scheduled",
+   "topic": "Planning and zoning",
+   "g": "scheduled",
+   "d": "2026-12-16",
+   "t": "Sheetz on McKnight Rd, Wed Dec 16",
+   "b": "Sheetz, Inc. is asking the Zoning Hearing Board for a special exception to allow automobile fueling at 9395 McKnight Rd, in the M-C Corridor District. On Dec 1, the Planning Commission is scheduled to take up Legacy Lyfe Pharmacies' request for conditional use approval of a light-industry use in the same district.",
+   "s": "Zoning board and Planning Commission agendas, Nov 23 Council packet",
+   "open": true,
+   "th": "mccandless-zhb-dec16",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-04",
+   "n": 9,
+   "towns": [
+    "Shaler"
+   ],
+   "kick": "Draft minutes",
+   "topic": "Planning and zoning",
+   "g": "draft",
+   "d": "2026-10-08",
+   "t": "Zoning Hearing Board, Oct 8",
+   "b": "Draft minutes show the board granted Duquesne Light's variance for a building of about 9,500 square feet at 1899 Duquesne St to store trucks and equipment, on the condition that the company hold the township harmless for flood damage. The case had been put off from Sep 10.",
+   "s": "Minutes collected Nov 20; approval not yet on record",
+   "open": false,
+   "th": "shaler-zhb-duquesne-light",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-05",
+   "n": 9,
+   "towns": [
+    "Ross"
+   ],
+   "kick": "Recorded Nov 6",
+   "topic": "Property that changed hands",
+   "g": "recorded",
+   "d": "2026-11-06",
+   "t": "Church property at 898 Forest Ave",
+   "b": "The county lists it as commercial, used as a place of worship, on a 24,187 sq ft lot. It sold for $280,750, and the sale is dated Nov 2. The county marks the buyer or the seller as tax exempt.",
+   "s": "County deed, recorded Nov 6",
+   "open": false,
+   "th": null,
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-06",
+   "n": 9,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Note",
+   "topic": "Property that changed hands",
+   "g": "note",
+   "d": "2026-11-23",
+   "t": "Deeds recorded Nov 2 through Nov 13",
+   "b": "It's one of 13 more deeds now posted for Nov 2 through Nov 6, for 58 in all. Of the 27 deeds recorded Nov 9 through Nov 13 posted so far, the one business property, an auto sales and service property at 10520 Perry Hwy in McCandless, moved on a $1 confirmatory deed, not a market sale.",
+   "s": "County deeds, in the file as updated Nov 22",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": [
+    "d09-05"
+   ],
+   "wk": false
+  },
+  {
+   "id": "d09-07",
+   "n": 9,
+   "towns": [
+    "McCandless"
+   ],
+   "kick": "Draft minutes",
+   "topic": "Councils and boards",
+   "g": "draft",
+   "d": "2026-10-26",
+   "t": "Town Council, Oct 26",
+   "b": "Draft minutes show council approved the Harmony Manor final subdivision and land development plan, 6 to 0. North Allegheny presented its senior high school addition, with a pool and athletics facility, set for spring 2027 to fall 2028; the minutes record a lighting waiver, 6 to 0, but no tally on the plan. Council also approved its Oct 12 minutes, 5 to 0.",
+   "s": "Minutes collected Nov 20; approval not yet on record",
+   "open": false,
+   "th": "mccandless-oct26-plans",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-08",
+   "n": 9,
+   "towns": [
+    "Franklin Park"
+   ],
+   "kick": "Draft minutes",
+   "topic": "Councils and boards",
+   "g": "draft",
+   "d": "2026-10-21",
+   "t": "Borough Council, Oct 21",
+   "b": "Draft minutes show council approved DeNoon Lumber Company's road use agreement to haul logs on Weinman Rd and State Gamelands Rd, re-approved Deerfield Estates FP Development's split of a Nicholson Rd lot into two home lots, and adopted Resolution 1430-2026, asking the state for $232,870.11 toward a wheel loader.",
+   "s": "Minutes collected Nov 20, up for approval Nov 18; approval not yet on record",
+   "open": false,
+   "th": "fp-council-oct21",
+   "tl": null,
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-09",
+   "n": 9,
+   "towns": [
+    "Franklin Park",
+    "McCandless",
+    "Ohio Township",
+    "Ross",
+    "Shaler",
+    "West View"
+   ],
+   "kick": "Note",
+   "topic": "Councils and boards",
+   "g": "note",
+   "d": "2026-11-23",
+   "t": "Minutes not posted yet",
+   "b": "Minutes haven't posted for Ross's Nov 4 and 16, Shaler's Nov 10 and 12, Franklin Park's Nov 17 and 18, West View's Oct 14 and Nov 11, Ohio Township's Nov 2 or McCandless's Nov 9 meetings.",
+   "s": "Town websites, collected Nov 20",
+   "open": false,
+   "th": "ross-2027-budget",
+   "tl": "Six towns",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-10",
+   "n": 9,
+   "towns": [
+    "Franklin Park",
+    "McCandless"
+   ],
+   "kick": "On the agenda",
+   "topic": "School boards",
+   "g": "agenda",
+   "d": "2026-11-18",
+   "t": "Combined meeting, Nov 18",
+   "b": "The agenda asked the board to accept McCandless's Oct 27 conditions of approval for the senior high school plan, and to approve three-year NRG Business Marketing electricity contracts and a 20-month Direct Energy Business gas contract at $3.187 per dekatherm.",
+   "s": "Agenda, Nov 18 combined meeting",
+   "open": true,
+   "th": "nasd-nov18",
+   "tl": "North Allegheny SD · McCandless, Franklin Park",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-11",
+   "n": 9,
+   "towns": [],
+   "kick": "Note",
+   "topic": "School boards",
+   "g": "note",
+   "d": "2026-11-23",
+   "t": "Other districts this week",
+   "b": "Shaler Area's Nov 18 agenda again shows no amounts for Centegix or Varonis. Avonworth and North Hills posted no new files.",
+   "s": "District board sites, collected Nov 19",
+   "open": false,
+   "th": null,
+   "tl": "School districts",
+   "ref": null,
+   "wk": false
+  },
+  {
+   "id": "d09-12",
+   "n": 9,
+   "towns": [
+    "West View"
+   ],
+   "kick": "Note",
+   "topic": "Food and drink",
+   "g": "note",
+   "d": "2026-11-23",
+   "t": "Liquor licenses and food permits",
+   "b": "In West View, MM CS Services PA LLC applied to transfer the restaurant license at Sweet Pea's, 5340 Perrysville Rd, held by SPBW LLC as of September. Six licenses remain in safekeeping. No new food opening in the six towns could be confirmed from county permits.",
+   "s": "PLCB filings and county food permits, both checked Nov 20",
+   "open": false,
+   "th": null,
+   "tl": "Six towns",
+   "ref": null,
+   "wk": false
+  },
   {
    "id": "d08-01",
    "n": 8,
@@ -847,7 +1087,7 @@
    "t": "Two plans up for final votes the same night",
    "b": "North Allegheny School District is asking for approval to add a natatorium of about 22,975 square feet, with a competition pool, at North Allegheny Senior High, 10375 Perry Hwy, plus more parking and reconfigured site roads. Pohl Construction's Harmony Manor plan would turn 8.6 acres at 9750 Harmony Rd into 12 single-family lots on a new street. The Planning Commission recommended both on Oct 6, with conditions.",
    "s": "Agenda and staff reports, Oct 26 packet",
-   "open": true,
+   "open": false,
    "th": "mccandless-oct26-plans",
    "tl": null,
    "ref": null,
@@ -885,7 +1125,7 @@
    "t": "Zoning Hearing Board, Sep 10",
    "b": "Duquesne Light asked for a variance to build a 9,500-square-foot building for bucket trucks and equipment at 1899 Duquesne St, on a site partly in the Pine Creek floodplain, where accessory buildings are capped at 500 square feet. The board put the case off a month so someone from the company and the township could attend.",
    "s": "Hearing transcript, posted by Oct 23",
-   "open": true,
+   "open": false,
    "th": "shaler-zhb-duquesne-light",
    "tl": null,
    "ref": null,
@@ -1021,7 +1261,7 @@
    "t": "Borough Council, Oct 21, amended agenda",
    "b": "The amended agenda carried a road use agreement letting Denoon Lumber Company haul logs on Weinman Rd and State Gamelands Rd for a timber harvest, and a renewed approval for Deerfield Estates FP Development to split a Deerfield Estates lot on Nicholson Rd into two home lots. Outcomes print when the minutes post.",
    "s": "Amended agenda, as of Oct 20",
-   "open": true,
+   "open": false,
    "th": "fp-council-oct21",
    "tl": null,
    "ref": null,
